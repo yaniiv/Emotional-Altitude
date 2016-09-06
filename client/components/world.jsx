@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
- 
+
 class World extends React.Component {
   render() {
-    return <h1>World</h1>
+    console.log('hey world!')
+    return (
+      <h1>World</h1>,
+      <p> wtf is going on</p>
+      )
   }
 }
  
-ReactDOM.render(<World/>, document.getElementById('world'));
+module.exports = World;
 
 //     //
 // class Calendar extends React.Component {
