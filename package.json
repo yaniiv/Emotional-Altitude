@@ -1,0 +1,11 @@
+{
+  "name": "solo-project-emotional-altitude",
+  "version": "1.0.0",
+  "description": "A realtime visualization of emotional state ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Yaniv Goldobin",
+  "license": "MIT"
+}
