@@ -2,9 +2,10 @@
   "name": "solo-project-emotional-altitude",
   "version": "1.0.0",
   "description": "A realtime visualization of emotional state ",
-  "main": "index.js",
+  "main": "./client/index.js",
   "scripts": {
     "start": "nodemon server/server.js",
+    "build": "./node_modules/.bin/webpack -w",
     "test": "test"
   },
   "author": "Yaniv Goldobin",
@@ -20,6 +21,7 @@
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
-    "webpack": "^1.12.12"
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.12.1"
   }
 }
