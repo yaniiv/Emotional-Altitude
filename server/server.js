@@ -4,7 +4,7 @@ var app = express();
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 
-app.listen(8080); //listens on port 3000 -> http://localhost:3000/
+app.listen(8080); //listens on port 8080
 
 app.use(express.static(__dirname +'./../')); //serves the index.html
 app.use(bodyParser.json());
@@ -25,6 +25,6 @@ app.get('/', function(req,res,next){
     console.log('you made a get request to /');
 });
 
-app.post('/', function(req,res,next){
+app.post('http://localhost:8080/webpack-dev-server/', function(req,res,next){
     console.log('you made a post request to /');
 });
