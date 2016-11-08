@@ -32,6 +32,7 @@ var CommentForm = React.createClass({
 
   render: function() {
     return (
+
       <form className="commentForm" onSubmit={this.handleSubmit}>
         <input
           className = "emotion-input"
