@@ -6,13 +6,17 @@ import $ from 'jquery';
 import Victory from './chart.jsx';
 import CommentForm from './comment_form.jsx';
 
-// var chartDataArray = [];
+class TopComponent extends React.Component {
+  constructo(props) {
+    super(props);
+    this.state = { data: [] };
+  }
 
-var TopComponent = React.createClass({
-
-    getInitialState: function() {
-    return {data: []};
-  },
+      // componentDidMount: function() {
+  //   this.loadCommentsFromServer();
+  //   // setInterval(this.loadCommentsFromServer, this.props.pollInterval);
+  // },  
+  
 
   // loadCommentsFromServer: function() {
   //   $.get('/', function (result) {
@@ -33,65 +37,41 @@ var TopComponent = React.createClass({
   // },
 
 
-
-  handleCommentSubmit: function(comment) {
-
+  handleCommentSubmit = (comment) => {
     //comment form data as an OBJECT comes into here as a comment variable
     var formattedComment = {}
     formattedComment.y = parseInt(comment.emotionLevel);
-    formattedComment.x = new Date (comment.postDate);
+    formattedComment.x = new Date(comment.postDate);
     formattedComment.label = comment.text;
 
     // formattedComment.messageContent = comment.text;
-
     console.log("formatted comment is:", formattedComment);
-    this.setState({data: this.state.data.concat(formattedComment)});
+    this.setState({ data: this.state.data.concat(formattedComment) });
+  }
 
-    // $.ajax({
-    //   url: 'http://localhost:8080/',
-    //   dataType: 'json',
-    //   type: 'POST'
-    //   // data: comment,
-    //   // success: function(data) {
-    //   //   this.setState({data: data});
-    //   // }.bind(this),
-    //   // error: function(xhr, status, err) {
-    //   //   this.setState({data: comments});
-    //   //   console.error(this.props.url, status, err.toString());
-    //   // }.bind(this)
-    // });
-  },
-
-
-
-  // componentDidMount: function() {
-  //   this.loadCommentsFromServer();
-  //   // setInterval(this.loadCommentsFromServer, this.props.pollInterval);
-  // },
-
-  testAjax: function(){
-  $.ajax({
-  type: "POST",
-  url: '/',
-  data: { name: "John", time: "2pm" },
-  contentType: 'application/json; charset=UTF-8'
-  })
+  testAjax = () => {
+    $.ajax({
+      type: "POST",
+      url: '/',
+      data: { name: "John", time: "2pm" },
+      contentType: 'application/json; charset=UTF-8'
+    })
 
     // $.post('/', { name: "John", time: "2pm" })
-  }.bind(this),
+  }
 
-  render: function() {
+  render () {
     return (
       <div className="commentBox">
-        <button onClick = {this.testAjax}> post invoked on click </button> 
+        <button onClick={this.testAjax}> post invoked on click </button>
         <CommentForm onCommentSubmit={this.handleCommentSubmit} />
-        <Victory className = "chart" dater = {this.state.data}/>
+        <Victory className="chart" dater={this.state.data} />
       </div>
     );
   }
-});
+};
 
 
 
-ReactDOM.render(<TopComponent />, document.getElementById('commentBox'));
+  ReactDOM.render(<TopComponent />, document.getElementById('commentBox'));
 
