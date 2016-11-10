@@ -1,85 +1,36 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 // import Nav from './nav'
-import { browserHistory } from 'react-router'
+import { browserHistory } from 'react-router';
 import $ from 'jquery';
 
-class Login extends React.Component {
-  
+export default class Login extends React.Component {
 
+  onSubmit(evt) {
+    evt.preventDefault();
+    const userName = evt.target.elements[0].value;
+    const password = evt.target.elements[1].value;
+    console.log('in submit');
+    console.log('signed up: ', userName);
+    console.log('password ', password);
 
-  onSubmit (evt) {
-    console.log('in submit')
-    evt.preventDefault()
-    const userName = evt.target.elements[0].value
-    const password = evt.target.elements[1].value
+    const userInfo = {
+      username: userName,
+      password: password
+    };
 
-    const value = {
-      username: 'yan',
-      password: 'pass'
-  }
-
-
-    let stringData = JSON.stringify(value);
-
-    $.ajax({
+    //dont need string data
+    // let stringData = JSON.stringify(value);
+      $.ajax({
       type: "POST",
       url: "http://localhost:7777/signup",
-      data: stringData,
-      success: function (result) {
-        console.log('in success')
-        console.log(result)
+      data: userInfo,
+      success: function(){
+        console.log('kkkkkkk')
       }
     })
-    // .done(() => {
-    //   $.ajax({
-    //   type: "GET",
-    //   url: "http://localhost:3000/showall",
-    //   data: stringData,
-    //   success: function (result) {
-    //     console.log('in success')
-    //     console.log(result)
-    //   }
-    // })
-    // })
-    
-    // $.ajax({
-    //     url : "http://localhost:3000/login",
-    //     type: "POST",
-    //     data : value,
-    //     success: function(data, textStatus, jqXHR)
-    //     {
-    //       //upon successful login make get reqeust to get user data after login
-    //       let username = JSON.parse(localStorage.getItem('user')).username;
-    //       $.ajax({
-    //           url : "http://localhost:3000/api/user/" +username+ "/expense",
-    //           type: "GET",
-    //           success: function(data)
-    //           {
-    //             console.log('data from login',data)
-    //             let stringifiedData = JSON.stringify(data)
-    //             localStorage.setItem("expenses", stringifiedData);
-    //           },
-    //           error: function (jqXHR, textStatus, errorThrown)
-    //           {
-    //             console.log('no bueno');
-    //           }
-    //       }).then( function() {
-    //         const path = `/dashboard/`
-    //         browserHistory.push(path)
-    //       })
-    //     },
-    //     error: function (jqXHR, textStatus, errorThrown)
-    //     {
-    //       console.log('no bueno');
-    //     }
-    // });
   }
-
-  // signin() {
     
-  // }
-
   render() {
     return (
       <div>
@@ -94,4 +45,3 @@ class Login extends React.Component {
   }
 }
 
-module.exports = Login;

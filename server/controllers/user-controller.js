@@ -6,12 +6,10 @@ module.exports = {
     console.log('req.params ', req.params)
     console.log('req.body', req.body)
     console.log('signing up ')
-    User.create({
-      username: 'yan',
-      password: 'boi'
-    }).then((user) => {
-      console.log('user', user)
-      res.status('200').json();
+    User.create(req.body)
+    .then((user) => {
+      console.log('user added', user)
+      res.status('200');
     }).catch(function (err) {
       console.log('error', err);
     })
@@ -33,13 +31,14 @@ module.exports = {
   showall(req,res) {
     console.log('hi')
      User.findAll({ where: {
-       username: 'yan'
+       username: 'John'
      }
     }).then((yansfound) => {
       console.log('yansfound', yansfound)
-      res.status('200').json(user);
+      res.status('200').json('yansfound');
     }).catch(function (err) {
       console.log('error', err);
     })
   }
+
 }

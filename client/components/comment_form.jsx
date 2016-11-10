@@ -1,5 +1,5 @@
 import React from 'react';
- 
+
 var CommentForm = React.createClass({
   getInitialState: function() {
     return {text: '', emotionLevel: null, postDate: null};

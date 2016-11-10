@@ -70,6 +70,10 @@
 
 	var _home2 = _interopRequireDefault(_home);
 
+	var _navBar = __webpack_require__(861);
+
+	var _navBar2 = _interopRequireDefault(_navBar);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -78,15 +82,13 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	// import Nav from './nav';
-
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
 
 	  function App() {
 	    _classCallCheck(this, App);
 
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
 	  }
 
 	  _createClass(App, [{
@@ -95,6 +97,7 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
+	        _react2.default.createElement(_navBar2.default, null),
 	        _react2.default.cloneElement(this.props.children, this.props)
 	      );
 	    }
@@ -102,9 +105,10 @@
 
 	  return App;
 	}(_react2.default.Component);
-	//s
 
 	exports.default = App;
+
+
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.browserHistory },
@@ -116,8 +120,6 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _login2.default })
 	  )
 	), document.getElementById('content'));
-
-	// export default App;
 
 /***/ },
 /* 1 */
@@ -25470,15 +25472,15 @@
 
 	'use strict';
 
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
-
-	var _reactDom = __webpack_require__(221);
-
-	var _reactDom2 = _interopRequireDefault(_reactDom);
 
 	var _reactRouter = __webpack_require__(158);
 
@@ -25493,6 +25495,7 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	// import ReactDOM from 'react-dom';
 	// import Nav from './nav'
 
 
@@ -25508,76 +25511,29 @@
 	  _createClass(Login, [{
 	    key: 'onSubmit',
 	    value: function onSubmit(evt) {
-	      console.log('in submit');
 	      evt.preventDefault();
 	      var userName = evt.target.elements[0].value;
 	      var password = evt.target.elements[1].value;
+	      console.log('in submit');
+	      console.log('signed up: ', userName);
+	      console.log('password ', password);
 
-	      var value = {
-	        username: 'yan',
-	        password: 'pass'
+	      var userInfo = {
+	        username: userName,
+	        password: password
 	      };
 
-	      var stringData = JSON.stringify(value);
-
+	      //dont need string data
+	      // let stringData = JSON.stringify(value);
 	      _jquery2.default.ajax({
 	        type: "POST",
 	        url: "http://localhost:7777/signup",
-	        data: stringData,
-	        success: function success(result) {
-	          console.log('in success');
-	          console.log(result);
+	        data: userInfo,
+	        success: function success() {
+	          console.log('kkkkkkk');
 	        }
 	      });
-	      // .done(() => {
-	      //   $.ajax({
-	      //   type: "GET",
-	      //   url: "http://localhost:3000/showall",
-	      //   data: stringData,
-	      //   success: function (result) {
-	      //     console.log('in success')
-	      //     console.log(result)
-	      //   }
-	      // })
-	      // })
-
-	      // $.ajax({
-	      //     url : "http://localhost:3000/login",
-	      //     type: "POST",
-	      //     data : value,
-	      //     success: function(data, textStatus, jqXHR)
-	      //     {
-	      //       //upon successful login make get reqeust to get user data after login
-	      //       let username = JSON.parse(localStorage.getItem('user')).username;
-	      //       $.ajax({
-	      //           url : "http://localhost:3000/api/user/" +username+ "/expense",
-	      //           type: "GET",
-	      //           success: function(data)
-	      //           {
-	      //             console.log('data from login',data)
-	      //             let stringifiedData = JSON.stringify(data)
-	      //             localStorage.setItem("expenses", stringifiedData);
-	      //           },
-	      //           error: function (jqXHR, textStatus, errorThrown)
-	      //           {
-	      //             console.log('no bueno');
-	      //           }
-	      //       }).then( function() {
-	      //         const path = `/dashboard/`
-	      //         browserHistory.push(path)
-	      //       })
-	      //     },
-	      //     error: function (jqXHR, textStatus, errorThrown)
-	      //     {
-	      //       console.log('no bueno');
-	      //     }
-	      // });
 	    }
-
-	    // signin() {
-
-	    // }
-
 	  }, {
 	    key: 'render',
 	    value: function render() {
@@ -25610,7 +25566,7 @@
 	  return Login;
 	}(_react2.default.Component);
 
-	module.exports = Login;
+	exports.default = Login;
 
 /***/ },
 /* 223 */
@@ -94379,6 +94335,105 @@
 	});
 
 	module.exports = CommentForm;
+
+/***/ },
+/* 861 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(221);
+
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+
+	var _reactRouter = __webpack_require__(158);
+
+	var _login = __webpack_require__(222);
+
+	var _login2 = _interopRequireDefault(_login);
+
+	var _home = __webpack_require__(224);
+
+	var _home2 = _interopRequireDefault(_home);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Nav = function (_React$Component) {
+	  _inherits(Nav, _React$Component);
+
+	  function Nav() {
+	    _classCallCheck(this, Nav);
+
+	    return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
+	  }
+
+	  _createClass(Nav, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'nav',
+	        { className: 'nav' },
+	        _react2.default.createElement(
+	          'ul',
+	          null,
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/login' },
+	              'Dashboard'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/goals' },
+	              'Goals'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { id: 'logout', onClick: this.logUserOut.bind(this) },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/home' },
+	              'Logout'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Nav;
+	}(_react2.default.Component);
+
+	// <li><Link to="/login">Login</Link></li>
+	// <li><Link to="/signup">Signup</Link></li>
+	// <li><Link to="/profile">Profile</Link></li>
+	// <li><Link to="/expense">Expenses</Link></li>
+
+
+	exports.default = Nav;
 
 /***/ }
 /******/ ]);
