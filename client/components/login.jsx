@@ -1,10 +1,11 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
-// import Nav from './nav'
 import { browserHistory } from 'react-router';
 import $ from 'jquery';
 
 export default class Login extends React.Component {
+  // constructor() {
+  //   super()
+  // }
 
   onSubmit(evt) {
     evt.preventDefault();
@@ -19,18 +20,18 @@ export default class Login extends React.Component {
       password: password
     };
 
-    //dont need string data
+    // dont need string data
     // let stringData = JSON.stringify(value);
-      $.ajax({
+    $.ajax({
       type: "POST",
       url: "http://localhost:7777/signup",
       data: userInfo,
-      success: function(){
-        console.log('kkkkkkk')
+      success: () => {
+        console.log('kkkkkkk');
       }
-    })
+    });
   }
-    
+
   render() {
     return (
       <div>
