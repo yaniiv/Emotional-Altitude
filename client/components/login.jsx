@@ -9,7 +9,7 @@ class Login extends React.Component {
 
 
   onSubmit (evt) {
-    // console.log()
+    console.log('in submit')
     evt.preventDefault()
     const userName = evt.target.elements[0].value
     const password = evt.target.elements[1].value
@@ -17,19 +17,31 @@ class Login extends React.Component {
     const value = {
       username: 'yan',
       password: 'pass'
-    }
+  }
 
 
     let stringData = JSON.stringify(value);
 
     $.ajax({
       type: "POST",
-      url: "http://localhost:3000/signup",
+      url: "http://localhost:7777/signup",
       data: stringData,
       success: function (result) {
+        console.log('in success')
         console.log(result)
       }
     })
+    // .done(() => {
+    //   $.ajax({
+    //   type: "GET",
+    //   url: "http://localhost:3000/showall",
+    //   data: stringData,
+    //   success: function (result) {
+    //     console.log('in success')
+    //     console.log(result)
+    //   }
+    // })
+    // })
     
     // $.ajax({
     //     url : "http://localhost:3000/login",

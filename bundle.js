@@ -102,17 +102,16 @@
 
 	  return App;
 	}(_react2.default.Component);
+	//s
 
 	exports.default = App;
-
-
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.browserHistory },
 	  _react2.default.createElement(
 	    _reactRouter.Route,
 	    { path: '/', component: App },
-	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _home2.default }),
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _login2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/home', component: _home2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _login2.default })
 	  )
@@ -25509,7 +25508,7 @@
 	  _createClass(Login, [{
 	    key: 'onSubmit',
 	    value: function onSubmit(evt) {
-	      // console.log()
+	      console.log('in submit');
 	      evt.preventDefault();
 	      var userName = evt.target.elements[0].value;
 	      var password = evt.target.elements[1].value;
@@ -25523,12 +25522,24 @@
 
 	      _jquery2.default.ajax({
 	        type: "POST",
-	        url: "http://localhost:3000/signup",
+	        url: "http://localhost:7777/signup",
 	        data: stringData,
 	        success: function success(result) {
+	          console.log('in success');
 	          console.log(result);
 	        }
 	      });
+	      // .done(() => {
+	      //   $.ajax({
+	      //   type: "GET",
+	      //   url: "http://localhost:3000/showall",
+	      //   data: stringData,
+	      //   success: function (result) {
+	      //     console.log('in success')
+	      //     console.log(result)
+	      //   }
+	      // })
+	      // })
 
 	      // $.ajax({
 	      //     url : "http://localhost:3000/login",
