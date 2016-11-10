@@ -8,16 +8,27 @@ var sequelize = new Sequelize('emotion-data','ygoldobin', null, {
   dialect: 'postgres'
 });
 
+//Define UserModel
 const User = sequelize.define('user', {
   username: {
     type: Sequelize.STRING,
   },
   password: {
     type: Sequelize.STRING,
+  },
+  emotionData: {
+    type: Sequelize.STRING,
   }
 });
 
-User.sync({ force: true });
+//will, based on your model definitions, create any missing tables. If force: true it will first drop tables before recreating them.
+User.sync({force: true}).then(function () {
+  // Table created
+  return User.create({
+    username: 'John',
+    password: 'Hancock'
+  });
+});
 
 module.exports = User;
 
