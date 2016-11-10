@@ -21,7 +21,7 @@ export default class App extends React.Component {
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App} >
-      <IndexRoute component={Login}/>
+      <IndexRoute component={Home}/>
       <Route path="/home" component={Home} />
       <Route path="/login" component={Login} />
     </Route>
