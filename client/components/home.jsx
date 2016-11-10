@@ -5,6 +5,7 @@ import $ from 'jquery';
 import Victory from './chart.jsx';
 import CommentForm from './comment_form.jsx';
 
+
 export default class TopComponent extends React.Component {
   constructor() {
     super();
@@ -19,13 +20,13 @@ export default class TopComponent extends React.Component {
     const feeling = {
       feelingNum: e.target.elements[0].valueAsNumber,
       feelingText: e.target.elements[1].value,
-      date: new Date(),
+      feelingDate: new Date()
     };
-    console.log("new feeling data point to add": feeling);
+    console.log("new feeling data point to add", feeling);
     
-    let feelingData = this.state.data;
-    feelingData.push(feeling)
-    this.setState({ data: feelingData })
+    const feelingData = this.state.data;
+    feelingData.push(feeling);
+    this.setState({ data: feelingData });
 
     console.log('feeling data after adding new feels: \n', this.state.data)
 
@@ -35,8 +36,7 @@ export default class TopComponent extends React.Component {
     return (
       <div className="commentBox">
         <CommentForm onCommentSubmit={this.handleCommentSubmit} />
-        <Victory className="chart" dater={this.state.data} />
-
+        <Victory className="chart" emotionData={this.state.data} />
       </div>
     );
   }
