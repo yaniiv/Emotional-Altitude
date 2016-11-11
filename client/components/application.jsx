@@ -1,17 +1,21 @@
 import React from 'react';
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
 import ReactDOM from 'react-dom';
 import Login from './login.jsx';
 import Home from './home.jsx';
+import Signup from './signup.jsx';
 import Navbar from './nav-bar.jsx';
+import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 
 
-export default class App extends React.Component {
+class App extends React.Component {
+  constructor() {
+    super();
+  }
 
   render() {
     return (
       <div>
-        <Navbar/>
+        <Navbar />
         {React.cloneElement(this.props.children, this.props)}
       </div>
     )
@@ -24,6 +28,9 @@ ReactDOM.render((
       <IndexRoute component={Home}/>
       <Route path="/home" component={Home} />
       <Route path="/login" component={Login} />
+      <Route path="/signup" component={Signup} />
     </Route>
   </Router>
 ), document.getElementById('content'));
+
+export default App;

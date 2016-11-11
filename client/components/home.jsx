@@ -1,12 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Navbar from './nav-bar.jsx';
 import d3 from 'd3';
 import $ from 'jquery';
 import Victory from './chart.jsx';
 import CommentForm from './comment_form.jsx';
+import { Router, Route, Link } from 'react-router';
 
 
-export default class TopComponent extends React.Component {
+export default class Home extends React.Component {
   constructor() {
     super();
     this.state = { data: [] };
@@ -32,6 +34,8 @@ export default class TopComponent extends React.Component {
   }
 
   postDataToDB(feeling) {
+    // let = userData
+
     $.ajax({
       type: "POST",
       url: "http://localhost:7777/postUserData",
@@ -42,13 +46,14 @@ export default class TopComponent extends React.Component {
     })
   }
 
+
   render() {
     return (
       <div className="commentBox">
-        <CommentForm onCommentSubmit={this.handleCommentSubmit} />
-        <Victory className="chart" emotionData={this.state.data} />
-      </div>
-    );
+      <CommentForm onCommentSubmit={this.handleCommentSubmit} />
+      <Victory className="chart" emotionData={this.state.data} />
+        </div>
+      )
   }
 }
 // ReactDOM.render(<TopComponent />, document.getElementById('commentBox'));

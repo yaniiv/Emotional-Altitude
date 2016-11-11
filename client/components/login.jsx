@@ -1,6 +1,8 @@
 import React from 'react';
-import { browserHistory } from 'react-router';
+// import { browserHistory } from 'react-router';
 import $ from 'jquery';
+import Signup from './signup.jsx'
+import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 
 export default class Login extends React.Component {
   // constructor() {
@@ -15,7 +17,7 @@ export default class Login extends React.Component {
     console.log('signed up: ', userName);
     console.log('password ', password);
 
-    const userInfo = {
+    let userInfo = {
       username: userName,
       password: password
     };
@@ -23,13 +25,15 @@ export default class Login extends React.Component {
     // dont need string data
     // let stringData = JSON.stringify(value);
     $.ajax({
-      type: "POST",
-      url: "http://localhost:7777/signup",
+      type: "GET",
+      url: "http://localhost:7777/signin",
       data: userInfo,
-      success: () => {
-        console.log('kkkkkkk');
+      success: (dataRetrieved) => {
+        console.log('You just signed in as: \n', dataRetrieved);
       }
     });
+
+    browserHistory.push('/home');
   }
 
   render() {
@@ -39,8 +43,9 @@ export default class Login extends React.Component {
         <form onSubmit={this.onSubmit.bind(this)}>
           <input type="text" placeholder="username"/> {' '}
           <input type="password" placeholder="password"/>{' '}
-          <button type="submit" className="submit-button">Sign Up</button>
+          <button type="submit" className="submit-button">Sign In</button>
         </form>
+        <h2><Link to='/signup'>No Account? Sign up now!</Link></h2>
       </div>
     )
   }

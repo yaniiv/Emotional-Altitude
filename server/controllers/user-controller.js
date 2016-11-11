@@ -9,7 +9,7 @@ module.exports = {
     User.create(req.body)
     .then((user) => {
       console.log('user added', user)
-      res.status('200');
+      res.status('200').json(user);
     }).catch(function (err) {
       console.log('error', err);
     })
@@ -19,26 +19,26 @@ module.exports = {
     console.log('req.params ', req.params)
     console.log('req.body', req.body)
     User.findOne({ where: {
-        username: req.params.username
+        username: req.body.username
       },
-    }).then((expense) => {
-		return res.status('200').json(expense);
+    }).then((userData) => {
+		return res.status('200').json(userData);
 	}).catch(function(err) {
 		console.log('error', err);
 	});
-  },
-
-  showall(req,res) {
-    console.log('hi')
-     User.findAll({ where: {
-       username: 'John'
-     }
-    }).then((yansfound) => {
-      console.log('yansfound', yansfound)
-      res.status('200').json('yansfound');
-    }).catch(function (err) {
-      console.log('error', err);
-    })
   }
+
+  // showall(req,res) {
+  //   console.log('hi')
+  //    User.findAll({ where: {
+  //      username: 'John'
+  //    }
+  //   }).then((yansfound) => {
+  //     console.log('yansfound', yansfound)
+  //     res.status('200').json('yansfound');
+  //   }).catch(function (err) {
+  //     console.log('error', err);
+  //   })
+  // }
 
 }
