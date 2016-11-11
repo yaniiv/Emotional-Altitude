@@ -31,6 +31,17 @@ export default class TopComponent extends React.Component {
     console.log('feeling data after adding new feels: \n', this.state.data);
   }
 
+  postDataToDB(feeling) {
+    $.ajax({
+      type: "POST",
+      url: "http://localhost:7777/postUserData",
+      data: userInfo,
+      success: function () {
+        console.log('success')
+      }
+    })
+  }
+
   render() {
     return (
       <div className="commentBox">

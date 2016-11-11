@@ -39,7 +39,7 @@ export default class Login extends React.Component {
         <form onSubmit={this.onSubmit.bind(this)}>
           <input type="text" placeholder="username"/> {' '}
           <input type="password" placeholder="password"/>{' '}
-          <button type="submit" className="submit-button">Submit</button>
+          <button type="submit" className="submit-button">Sign Up</button>
         </form>
       </div>
     )

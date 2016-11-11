@@ -25558,7 +25558,7 @@
 	          _react2.default.createElement(
 	            'button',
 	            { type: 'submit', className: 'submit-button' },
-	            'Submit'
+	            'Sign Up'
 	          )
 	        )
 	      );
@@ -35725,6 +35725,18 @@
 	      this.setState({ data: feelingData });
 
 	      console.log('feeling data after adding new feels: \n', this.state.data);
+	    }
+	  }, {
+	    key: 'postDataToDB',
+	    value: function postDataToDB(feeling) {
+	      _jquery2.default.ajax({
+	        type: "POST",
+	        url: "http://localhost:7777/postUserData",
+	        data: userInfo,
+	        success: function success() {
+	          console.log('success');
+	        }
+	      });
 	    }
 	  }, {
 	    key: 'render',
@@ -52023,7 +52035,7 @@
 			key: 'render',
 			value: function render() {
 				var dateTicks = this.props.emotionData.map(function (feelsObj) {
-					return (0, _moment2.default)(feelsObj.feelingDate).format('LTS');
+					return (0, _moment2.default)(feelsObj.feelingDate).calendar();
 				});
 
 				var emotionTicks = this.props.emotionData.map(function (feelsObj) {
@@ -52031,39 +52043,68 @@
 				});
 
 				console.log('dateTicks ', dateTicks);
-				console.log('dateTicks ', dateTicks);
+				console.log('emotionTicks ', emotionTicks);
 				console.log('emotionData, ', this.props.emotionData);
 
 				return _react2.default.createElement(
-					'svg',
-					{ width: 600, height: 600 },
-					_react2.default.createElement(_victory.VictoryAxis, {
-						tickValues: dateTicks,
-						label: "Emotional Altitude"
-					}),
-					_react2.default.createElement(_victory.VictoryAxis, {
-						dependentAxis: true,
-						tickValues: emotionTicks,
-						label: "Date"
-					}),
-					_react2.default.createElement(_victory.VictoryArea, {
-						animate: { duration: 2000 },
-						style: {
-							data: {
-								fill: "teal",
-								opacity: 0.3
-							}
-						},
-						data: this.props.emotionData,
-						x: "feelingDate",
-						y: "feelingNum"
-					})
+					_victory.VictoryChart,
+					null,
+					_react2.default.createElement(
+						'svg',
+						{ width: 600, height: 600 },
+						_react2.default.createElement(_victory.VictoryAxis, {
+							tickValues: dateTicks,
+							label: "Date"
+						}),
+						_react2.default.createElement(_victory.VictoryScatter, {
+							animate: { duration: 2000 },
+							style: {
+								data: {
+									fill: "teal"
+								},
+								labels: {
+									fill: "teal",
+									fontSize: 14,
+									padding: 12
+								}
+							},
+							size: 2,
+							data: this.props.emotionData,
+							labels: function labels(data) {
+								return data.feelingText;
+							},
+							x: "feelingDate",
+							y: "feelingNum"
+						}),
+						_react2.default.createElement(_victory.VictoryArea, {
+							animate: { duration: 2000 },
+							style: {
+								data: {
+									fill: "teal",
+									opacity: 0.3
+								}
+							},
+							data: this.props.emotionData,
+							x: "feelingDate",
+							y: "feelingNum"
+						})
+					)
 				);
 			}
 		}]);
 
 		return Victory;
 	}(_react2.default.Component);
+
+	// <VictoryAxis
+	// dependentAxis		
+	// 	orientation='left'	
+	// 	label={"Emotional Altitude"}
+	// 	tickCount={1}	
+	// 	// tickValues={[]}
+	// 	// tickFormat={["first", "second", "third"]}
+	// />
+
 
 	//  <svg height={300} width={1000}>
 	//             <VictoryArea
