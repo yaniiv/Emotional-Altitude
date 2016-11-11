@@ -28,17 +28,4 @@ module.exports = {
 	});
   }
 
-  // showall(req,res) {
-  //   console.log('hi')
-  //    User.findAll({ where: {
-  //      username: 'John'
-  //    }
-  //   }).then((yansfound) => {
-  //     console.log('yansfound', yansfound)
-  //     res.status('200').json('yansfound');
-  //   }).catch(function (err) {
-  //     console.log('error', err);
-  //   })
-  // }
-
 }
