@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Login from './login.jsx';
-import Home from './home.jsx';
-import Signup from './signup.jsx';
-import Navbar from './nav-bar.jsx';
+import Login from './compenents/login.jsx';
+import Home from './compenents/home.jsx';
+import Signup from './compenents/signup.jsx';
+import Navbar from './compenents/nav-bar.jsx';
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 
 
