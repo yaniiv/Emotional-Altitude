@@ -7,11 +7,13 @@ import Victory from './chart.jsx';
 import CommentForm from './comment_form.jsx';
 import { Router, Route, Link } from 'react-router';
 
+import { connect } from 'react-redux'; 
+import store from '../../store.js';
 
-export default class Home extends React.Component {
+
+class HomeContainer extends React.Component {
   constructor() {
     super();
-    this.state = { data: [] };
     this.handleCommentSubmit = this.handleCommentSubmit.bind(this);
   }
 
@@ -33,18 +35,16 @@ export default class Home extends React.Component {
     console.log('feeling data after adding new feels: \n', this.state.data);
   }
 
-  postDataToDB(feeling) {
-    // let = userData
-
-    $.ajax({
-      type: "POST",
-      url: "http://localhost:7777/postUserData",
-      data: userInfo,
-      success: function () {
-        console.log('success')
-      }
-    })
-  }
+  // postDataToDB(feeling) {
+  //   $.ajax({
+  //     type: "POST",
+  //     url: "http://localhost:7777/postUserData",
+  //     data: userInfo,
+  //     success: function () {
+  //       console.log('success')
+  //     }
+  //   })
+  // }
 
 
   render() {
@@ -56,5 +56,11 @@ export default class Home extends React.Component {
       )
   }
 }
-// ReactDOM.render(<TopComponent />, document.getElementById('commentBox'));
 
+const mapStateToProps = function(store){
+  return {
+    data: store.homeState.data
+  }
+}
+
+export default connect(mapStateToProps)(HomeContainer)
