@@ -25,8 +25,8 @@ export default class Victory extends React.Component {
 		console.log('emotionData, ', this.props.emotionData);
 
 		return (		
-			<VictoryChart   >
-			<svg width={600} height={600}> 
+			// <VictoryChart   >
+			<svg width={1000} height={600}> 
 
 				<VictoryAxis
 					tickValues={dateTicks}	
@@ -66,7 +66,7 @@ export default class Victory extends React.Component {
 					y={"feelingNum"}
 				/>
 			</svg>
-			</VictoryChart>
+			// </VictoryChart>
 		)
 	}
 }

@@ -1,13 +1,14 @@
 import React from 'react';
 import * as types from '../../actions/action-types.js';
-import Nav from './Nav';
+import Nav from './Nav.jsx';
+
 import store from '../../store.js';
 import { connect } from 'react-redux'; 
 
 
 class HeaderContainer extends React.Component {
-  constructor(props){
-    super(props)
+  constructor(){
+    super()
     this.handleNavClick = this.handleNavClick.bind(this);
   }
 
@@ -20,13 +21,13 @@ class HeaderContainer extends React.Component {
   }
 
   render(){
-   return {
+   return (
       <div>
         <div>
-          <Nav items={this.state.items} handler={this.handleNavClick} />
+          <Nav items={this.props.items} handler={this.handleNavClick} />
         </div>
       </div>
-    }
+   )
   }
 }
 

@@ -1,26 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 
+import store from './store.js';
 import HomeContainer from './pages/home/HomeContainer.jsx';
 import HeaderContainer from './pages/header/HeaderContainer.jsx';
 
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 
-import { Provider } from 'react-redux';
-import { store } from './store.js';
 
 
 
-ReactDOM.render((
+ReactDOM.render(
   <Provider store={store}>
     <div>
     <HeaderContainer/>
     <HomeContainer/>
     </div>
   </Provider>
-), document.getElementById('content'));
+  , document.getElementById('content')
+);
 
-export default App;
+// export default App;
 
 
 
