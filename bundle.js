@@ -76,39 +76,23 @@
 	  _reactRedux.Provider,
 	  { store: _store2.default },
 	  _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(_HeaderContainer2.default, null),
-	    _react2.default.createElement(_HomeContainer2.default, null)
+	    _reactRouter.Router,
+	    { history: _reactRouter.browserHistory },
+	    _react2.default.createElement(
+	      _reactRouter.Route,
+	      { path: '/', component: _HomeContainer2.default },
+	      _react2.default.createElement(_reactRouter.IndexRoute, { component: _HomeContainer2.default })
+	    )
 	  )
 	), document.getElementById('content'));
 
-	// export default App;
-
-
-	//   <Router history={browserHistory}>
-	//     <Route path="/" component={App} >
-	//       <IndexRoute component={Home}/>
-	//      <Route path="/home" component={Home} />
-	//       <Route path="/login" component={Login} />
-	//      <Route path="/signup" component={Signup} />
-	//    </Route>
-	//  </Router>
-
-	// class App extends React.Component {
-	//   constructor() {
-	//     super();
-	//   }
-
-	//   render() {
-	//     return (
-	//       <div>
-	//         <Navbar />
-	//         {React.cloneElement(this.props.children, this.props)}
-	//       </div>
-	//     )
-	//   }
+	// export default App; class App extends React.Component {   constructor() {
+	// super();   }   render() {     return (       <div>         <Navbar />
+	// {React.cloneElement(this.props.children, this.props)}       </div>     )   }
 	// }
+
+	// <Route path="/login" component={Login}/>
+	// <Route path="/signup" component={Signup}/>
 
 /***/ },
 /* 1 */

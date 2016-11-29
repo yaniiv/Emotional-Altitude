@@ -66,7 +66,7 @@ class HomeContainer extends React.Component {
     return (
       <div className="commentBox">
       hihihihi
-      <CommentForm onCommentSubmit={this.handleCommentSubmit} />
+        <CommentForm onCommentSubmit={this.handleCommentSubmit} />
       <Victory className="chart" emotionData={this.props.data} />
         </div>
       )

@@ -22,15 +22,16 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render((
-  <Router history={browserHistory}>
-    <Route path="/" component={App} >
-      <IndexRoute component={Home}/>
-      <Route path="/home" component={Home} />
-      <Route path="/login" component={Login} />
-      <Route path="/signup" component={Signup} />
-    </Route>
-  </Router>
-), document.getElementById('content'));
 
-export default App;
+// ReactDOM.render((
+//   <Router history={browserHistory}>
+//     <Route path="/" component={App} >
+//       <IndexRoute component={Home}/>
+//       <Route path="/home" component={Home} />
+//       <Route path="/login" component={Login} />
+//       <Route path="/signup" component={Signup} />
+//     </Route>
+//   </Router>
+// ), document.getElementById('content'));
+
+// export default App;
