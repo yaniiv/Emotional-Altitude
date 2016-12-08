@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import Navbar from './nav-bar.jsx';
+
+import MyNav from './my-nav.jsx';
+
 import d3 from 'd3';
 import $ from 'jquery';
 import Victory from './chart.jsx';
@@ -20,7 +23,6 @@ import {
   DatePickerFactory
 } from "@blueprintjs/core";
 
-import myNav from './myNav.jsx';
 
 class HomeContainer extends React.Component {
   constructor() {
@@ -57,9 +59,9 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <div>
-        <myNav/>
 
         <div className="commentBox">
+        <MyNav />
 
           <button className="pt-button">dawda</button>
           <Menu >
@@ -67,7 +69,8 @@ class HomeContainer extends React.Component {
           </Menu>
           <Breadcrumb/>
           hihihihicddd
-          <Spinner/>
+          <Spinner />
+          
           <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
           <Victory className="chart" emotionData={this.props.data}/>
         </div>
