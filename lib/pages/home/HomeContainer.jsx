@@ -10,7 +10,17 @@ import {Router, Route, Link} from 'react-router';
 import {connect} from 'react-redux';
 import store from '../../store.js';
 import * as types from '../../actions/action-types.js';
-import { Colors, Menu, MenuItem, Intent, Navbar, Breadcrumb, Spinner, DatePickerFactory} from "@blueprintjs/core";
+import {
+  Colors,
+  Menu,
+  MenuItem,
+  Intent,
+  Breadcrumb,
+  Spinner,
+  DatePickerFactory
+} from "@blueprintjs/core";
+
+import myNav from './myNav.jsx';
 
 class HomeContainer extends React.Component {
   constructor() {
@@ -23,11 +33,10 @@ class HomeContainer extends React.Component {
   // OLDhandleCommentSubmit(e) {   e.preventDefault();   console.log('feeling data
   // before adding new feels: \n', this.state.data);   const feeling = {
   // feelingNum: e.target.elements[0].valueAsNumber,     feelingText:
-  // e.target.elements[1].value,     feelingDate: new Date()   };
-  // console.log("new feeling data point to add", feeling);   const feelingData =
-  // this.state.data;   feelingData.push(feeling);   this.setState({ data:
-  // feelingData });   console.log('feeling data after adding new feels: \n',
-  // this.state.data); }
+  // e.target.elements[1].value,     feelingDate: new Date()   }; console.log("new
+  // feeling data point to add", feeling);   const feelingData = this.state.data;
+  //  feelingData.push(feeling);   this.setState({ data: feelingData });
+  // console.log('feeling data after adding new feels: \n', this.state.data); }
 
   handleCommentSubmit(e) {
     e.preventDefault();
@@ -48,26 +57,13 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <div>
-        <nav class="pt-navbar .modifier">
-  <div class="pt-navbar-group pt-align-left">
-    <div class="pt-navbar-heading">Blueprint</div>
-    <input class="pt-input" placeholder="Search files..." type="text" />
-  </div>
-  <div class="pt-navbar-group pt-align-right">
-    <button class="pt-button pt-minimal pt-icon-home">Home</button>
-    <button class="pt-button pt-minimal pt-icon-document">Files</button>
-    <span class="pt-navbar-divider"></span>
-    <button class="pt-button pt-minimal pt-icon-user"></button>
-    <button class="pt-button pt-minimal pt-icon-notifications"></button>
-    <button class="pt-button pt-minimal pt-icon-cog"></button>
-  </div>
-</nav>
+        <myNav/>
 
         <div className="commentBox">
 
-          <button intent={Intent.PRIMARY} className="pt-button">dawda</button>
+          <button className="pt-button">dawda</button>
           <Menu >
-          <MenuItem />
+            <MenuItem/>
           </Menu>
           <Breadcrumb/>
           hihihihicddd
