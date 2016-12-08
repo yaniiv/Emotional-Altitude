@@ -52,9 +52,9 @@ class HomeContainer extends React.Component {
 
         <div className="commentBox">
 
-          <button className="pt-button @blue3">dawda</button>
+          <button className="pt-button">dawda</button>
           
-          hihihihi
+          hihihihicddd
           <Spinner/>
           <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
           <Victory className="chart" emotionData={this.props.data}/>
