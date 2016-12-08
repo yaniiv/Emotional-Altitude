@@ -10,7 +10,7 @@ import {Router, Route, Link} from 'react-router';
 import {connect} from 'react-redux';
 import store from '../../store.js';
 import * as types from '../../actions/action-types.js';
-import { Colors, Navbar, Spinner, DatePickerFactory} from "@blueprintjs/core";
+import { Colors, Menu, MenuItem, Intent, Navbar, Breadcrumb, Spinner, DatePickerFactory} from "@blueprintjs/core";
 
 class HomeContainer extends React.Component {
   constructor() {
@@ -48,12 +48,28 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <div>
-      
+        <nav class="pt-navbar .modifier">
+  <div class="pt-navbar-group pt-align-left">
+    <div class="pt-navbar-heading">Blueprint</div>
+    <input class="pt-input" placeholder="Search files..." type="text" />
+  </div>
+  <div class="pt-navbar-group pt-align-right">
+    <button class="pt-button pt-minimal pt-icon-home">Home</button>
+    <button class="pt-button pt-minimal pt-icon-document">Files</button>
+    <span class="pt-navbar-divider"></span>
+    <button class="pt-button pt-minimal pt-icon-user"></button>
+    <button class="pt-button pt-minimal pt-icon-notifications"></button>
+    <button class="pt-button pt-minimal pt-icon-cog"></button>
+  </div>
+</nav>
 
         <div className="commentBox">
 
-          <button className="pt-button">dawda</button>
-          
+          <button intent={Intent.PRIMARY} className="pt-button">dawda</button>
+          <Menu >
+          <MenuItem />
+          </Menu>
+          <Breadcrumb/>
           hihihihicddd
           <Spinner/>
           <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
