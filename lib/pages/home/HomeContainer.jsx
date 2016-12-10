@@ -32,14 +32,6 @@ class HomeContainer extends React.Component {
       .bind(this);
   }
 
-  // OLDhandleCommentSubmit(e) {   e.preventDefault();   console.log('feeling data
-  // before adding new feels: \n', this.state.data);   const feeling = {
-  // feelingNum: e.target.elements[0].valueAsNumber,     feelingText:
-  // e.target.elements[1].value,     feelingDate: new Date()   }; console.log("new
-  // feeling data point to add", feeling);   const feelingData = this.state.data;
-  //  feelingData.push(feeling);   this.setState({ data: feelingData });
-  // console.log('feeling data after adding new feels: \n', this.state.data); }
-
   handleCommentSubmit(e) {
     e.preventDefault();
     store.dispatch({
