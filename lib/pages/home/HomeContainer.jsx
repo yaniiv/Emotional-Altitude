@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import Navbar from './nav-bar.jsx';
 
 import MyNav from './my-nav.jsx';
 
