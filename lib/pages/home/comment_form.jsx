@@ -5,7 +5,6 @@ export default class CommentForm extends React.Component {
     super();
   }
 
-
   render () {
     return (
       <form className="commentForm" onSubmit={this.props.onCommentSubmit}>
