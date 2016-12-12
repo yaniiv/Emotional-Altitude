@@ -7,7 +7,7 @@ import d3 from 'd3';
 import $ from 'jquery';
 import Victory from './emotion-chart.jsx';
 import CommentForm from './comment-form.jsx';
-import {Router, Route, Link} from 'react-router';
+import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 
 import {connect} from 'react-redux';
 import store from '../../store.js';
@@ -21,7 +21,6 @@ import {
   Spinner,
   DatePickerFactory
 } from "@blueprintjs/core";
-
 
 class HomeContainer extends React.Component {
   constructor() {
@@ -43,6 +42,10 @@ class HomeContainer extends React.Component {
     })
   }
 
+  browserPush() {
+    browserHistory.push('/login')
+  }
+
   // postDataToDB(feeling) {   $.ajax({     type: "POST",     url:
   // "http://localhost:7777/postUserData",     data: userInfo,     success:
   // function () {       console.log('success')     }   }) }
@@ -50,7 +53,7 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <div>
-        <MyNav />
+        <button onClick={this.browserPush}>browserpush</button>
         <CommentForm className="commentBox" onCommentSubmit={this.handleCommentSubmit}/>
         <Victory className="chart" emotionData={this.props.data}/>
       </div>
@@ -63,3 +66,4 @@ const mapStateToProps = function (store) {
 }
 
 export default connect(mapStateToProps)(HomeContainer)
+        // <MyNav />
