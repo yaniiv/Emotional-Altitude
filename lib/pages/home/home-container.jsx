@@ -5,8 +5,8 @@ import MyNav from './my-nav.jsx';
 
 import d3 from 'd3';
 import $ from 'jquery';
-import Victory from './chart.jsx';
-import CommentForm from './comment_form.jsx';
+import Victory from './emotion-chart.jsx';
+import CommentForm from './comment-form.jsx';
 import {Router, Route, Link} from 'react-router';
 
 import {connect} from 'react-redux';
@@ -50,21 +50,9 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <div>
-
-        <div className="commentBox">
         <MyNav />
-
-          <button className="pt-button">dawda</button>
-          <Menu >
-            <MenuItem/>
-          </Menu>
-          <Breadcrumb/>
-          hihihihicddd
-          <Spinner />
-          
-          <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
-          <Victory className="chart" emotionData={this.props.data}/>
-        </div>
+        <CommentForm className="commentBox" onCommentSubmit={this.handleCommentSubmit}/>
+        <Victory className="chart" emotionData={this.props.data}/>
       </div>
     )
   }

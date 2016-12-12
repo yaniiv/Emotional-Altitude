@@ -19,7 +19,7 @@ export default class Victory extends React.Component {
 		let emotionTicks = this.props.emotionData.map((feelsObj) => {
 			return feelsObj.feelingNum;
 		})
-		
+		// 
 		console.log('dateTicks ', dateTicks);
 		console.log('emotionTicks ', emotionTicks);
 		console.log('emotionData, ', this.props.emotionData);

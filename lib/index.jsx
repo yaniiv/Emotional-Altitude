@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 
 import store from './store.js';
-import HomeContainer from './pages/home/HomeContainer.jsx';
-import HeaderContainer from './pages/header/HeaderContainer.jsx';
+import HomeContainer from './pages/home/home-container.jsx';
+import Login from './pages/landing/login.jsx';
 
 import {Router, Route, Link, browserHistory, IndexRoute} from 'react-router';
 
@@ -12,7 +12,8 @@ ReactDOM.render(
   <Provider store={store}>
   <Router history={browserHistory}>
     <Route path="/" component={HomeContainer}>
-      <IndexRoute component={HomeContainer}/>
+      <IndexRoute component={HomeContainer} />
+      <Route path="/login" component={Login}/>  
     </Route>
   </Router>
 </Provider>, document.getElementById('content'));
@@ -22,5 +23,5 @@ ReactDOM.render(
 // {React.cloneElement(this.props.children, this.props)}       </div>     )   }
 // }
 
-      // <Route path="/login" component={Login}/>
+      // <
       // <Route path="/signup" component={Signup}/>

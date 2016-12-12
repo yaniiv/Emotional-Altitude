@@ -1,7 +1,10 @@
 import React from 'react';
+import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 
 const MyNav = (props) => {
   return (
+    <div>
+      
     <div>
       <nav className="pt-navbar .modifier">
         <div className="pt-navbar-group pt-align-left">
@@ -17,7 +20,19 @@ const MyNav = (props) => {
           <button className="pt-button pt-minimal pt-icon-cog"></button>
         </div>
       </nav>
-    </div>
+      </div>
+      
+    <div>
+      <nav className="nav">
+        <ul>
+          <li><Link to="login">Login</Link></li>
+          <li><Link to="home">Home</Link></li>
+          <li><Link to="signup">Signup</Link></li>
+        </ul>
+      </nav>
+      </div>
+      
+    </div>  
   );
 };
 
