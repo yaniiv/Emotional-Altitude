@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import store from '../../store.js';
 
 const MyNav = (props) => {
-  console.log(props.loggedIn)  
+  console.log('from nav',props.loggedIn)  
   return (
     <div>
       <nav className="pt-navbar .modifier">
