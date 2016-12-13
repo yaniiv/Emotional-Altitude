@@ -2,9 +2,11 @@ import React from 'react';
 // import { browserHistory } from 'react-router';
 import $ from 'jquery';
 import Signup from './signup.jsx'
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
+import { browserHistory, Link } from 'react-router';
+import { connect } from 'react-redux'; 
+import store from '../../store.js';
 
-export default class Login extends React.Component {
+class Login extends React.Component {
   // constructor() {
   //   super()
   // }
@@ -51,3 +53,10 @@ export default class Login extends React.Component {
   }
 }
 
+const mapStateToProps = function(store){
+  return {
+    loggedIn: store.headerState.loggedIn,
+  }
+}
+
+export default connect(mapStateToProps)(Login);

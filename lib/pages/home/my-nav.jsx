@@ -1,7 +1,10 @@
 import React from 'react';
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
+import { Link } from 'react-router';
+import { connect } from 'react-redux'; 
+import store from '../../store.js';
 
 const MyNav = (props) => {
+  console.log(props.loggedIn)  
   return (
     <div>
       <nav className="pt-navbar .modifier">
@@ -21,4 +24,10 @@ const MyNav = (props) => {
   );
 };
 
-export default MyNav
+const mapStateToProps = function(store){
+  return {
+    loggedIn: store.headerState.loggedIn,
+  }
+}
+
+export default connect(mapStateToProps)(MyNav);
