@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-
 import store from './store.js';
 import HomeContainer from './pages/home/home-container.jsx';
 import Login from './pages/landing/login.jsx';
+import Signup from './pages/landing/signup.jsx';
 import MyNav from './pages/home/my-nav.jsx';
+
 
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 

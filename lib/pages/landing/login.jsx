@@ -8,9 +8,9 @@ import store from '../../store.js';
 import * as types from '../../actions/action-types.js';
 
 class Login extends React.Component {
-  // constructor() {
-  //   super()
-  // }
+  constructor() {
+    super()
+  }
 
   onSubmit(evt) {
     evt.preventDefault();
@@ -27,24 +27,24 @@ class Login extends React.Component {
 
     // dont need string data
     // let stringData = JSON.stringify(value);
-    // $.ajax({
-    //   type: "GET",
-    //   url: "http://localhost:7777/signin",
-    //   data: userInfo,
-    //   success: (dataRetrieved) => {
-    //     console.log('You just signed in as: \n', dataRetrieved);
-    //   }
-    // });
+    $.ajax({
+      type: "GET",
+      url: "http://localhost:7777/signin",
+      data: userInfo,
+      success: (dataRetrieved) => {
+        console.log('You just signed in as: \n', dataRetrieved);
+      }
+    });
     store.dispatch({
       type: types.LOGIN,
-      selectedIndex: props.loggedIn 
+      selectedIndex: this.props.loggedIn 
     })
     
-    browserHistory.push('/home');
+    // browserHistory.push('/home');
   }
 
   render() {
-    console.log('from login',props.loggedIn)
+    console.log('from login',this.props.loggedIn)
     return (
       <div>
         <h1>Login</h1>
