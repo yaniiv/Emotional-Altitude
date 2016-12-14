@@ -24,11 +24,6 @@ module.exports = {
       },
     }).then((userData) => {
       console.log("SERVER-user signing in: ", userData)
-
-      if (userData === null) {
-        console.log("SERVER-rejecting")
-        return res.status(401)
-      }
 		return res.status('200').json(userData);
 	}).catch(function(err) {
 		console.log('error', err);

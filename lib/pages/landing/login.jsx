@@ -34,18 +34,22 @@ class Login extends React.Component {
       url: "http://localhost:7777/signin",
       data: userInfo,
       success: (dataRetrieved) => {
-        console.log('IN SUCCESS: You just signed in as: \n', dataRetrieved);
+        console.log('Successful AJAX Get: \n', dataRetrieved);
       },
-      error: (request, status, error) => {
-        console.log("not a valid user")
+    }).done((signinUserData) => {
+      if (signinUserData === null) {
+        alert('user does not exist')
+      } else {
+        store.dispatch({
+          type: types.LOGIN,
+          loggedIn: true 
+        })
+        browserHistory.push('/home');
       }
-    });
-    store.dispatch({
-      type: types.LOGIN,
-      selectedIndex: this.props.loggedIn 
     })
     
-    // browserHistory.push('/home');
+    
+   
   }
 
   render() {
