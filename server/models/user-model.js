@@ -24,7 +24,7 @@ const User = sequelize.define('user', {
 //will, based on your model definitions, create any missing tables. If force: true it will first drop tables before recreating them.
 User.sync().then(function () {
   // Table created
-  //{force: true}
+  // {force: true}
   // return User.create({
   //   username: 'John',
   //   password: 'Hancock'

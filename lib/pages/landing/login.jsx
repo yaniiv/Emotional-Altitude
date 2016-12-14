@@ -17,22 +17,27 @@ class Login extends React.Component {
     const userName = evt.target.elements[0].value;
     const password = evt.target.elements[1].value;
     console.log('in submit');
-    console.log('signed up: ', userName);
-    console.log('password ', password);
+
+    console.log('FORM - signing in: ', userName);
+    console.log('FORM - password ', password);
 
     let userInfo = {
       username: userName,
       password: password
     };
 
-    // dont need string data
-    // let stringData = JSON.stringify(value);
+    // dont need string data with bodyparser.urlencoded
+    // let stringData = JSON.stringify(userInfo);
+
     $.ajax({
-      type: "GET",
+      type: "POST",
       url: "http://localhost:7777/signin",
       data: userInfo,
       success: (dataRetrieved) => {
-        console.log('You just signed in as: \n', dataRetrieved);
+        console.log('IN SUCCESS: You just signed in as: \n', dataRetrieved);
+      },
+      error: (request, status, error) => {
+        console.log("not a valid user")
       }
     });
     store.dispatch({

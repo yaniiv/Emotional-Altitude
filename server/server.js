@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded());
 
 app.post('/signup', userController.signup);
 
-app.get('/signin', userController.signin);
+app.post('/signin', userController.signin);
 
 app.listen(7777,function(){
   console.log("Started on PORT 7777");
