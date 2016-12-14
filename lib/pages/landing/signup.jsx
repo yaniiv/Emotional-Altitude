@@ -1,9 +1,11 @@
 import React from 'react';
 import { browserHistory, Link } from 'react-router';
 import $ from 'jquery';
+import { connect } from 'react-redux'; 
+import store from '../../store.js';
+import * as types from '../../actions/action-types.js';
 
-
-export default class Signup extends React.Component {
+class Signup extends React.Component {
 
   onSignup(evt) {
     evt.preventDefault();
@@ -21,9 +23,18 @@ export default class Signup extends React.Component {
       data: userInfo,
       success: (userSaved) => {
         console.log('in SUCCESS signed up: ', userSaved)
-      }
+        if (userSaved.username === "") {
+          alert("username and password required!")
+        } else {
+          store.dispatch({
+            type: types.LOGIN,
+            loggedIn: true 
+          })
+          browserHistory.push('/home');
+          }
+        }
+       
     });
-    browserHistory.push('/home');
   }
 
   render() {
@@ -40,3 +51,10 @@ export default class Signup extends React.Component {
   }
 }
 
+const mapStateToProps = function(store){
+  return {
+    loggedIn: store.headerState.loggedIn,
+  }
+}
+
+export default connect(mapStateToProps)(Signup);
