@@ -31,6 +31,7 @@ ReactDOM.render(
     <Route path="/" component={App}>
       <IndexRoute component={Login} />
       <Route path="/login" component={Login} />
+      <Route path="/signup" component={Signup} />
       <Route path="/home" component={HomeContainer}/>    
     </Route>
   </Router>
