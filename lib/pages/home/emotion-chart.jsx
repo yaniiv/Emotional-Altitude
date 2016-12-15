@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
 import { VictoryCandlestick } from 'victory';
 import { VictoryLine } from 'victory';
 import { VictoryScatter } from 'victory';
@@ -26,7 +25,8 @@ export default class Victory extends React.Component {
 
 		return (		
 			// <VictoryChart   >
-			<svg width={1000} height={600}> 
+			<div id="eChart">
+			<svg > 
 
 				<VictoryAxis
 					tickValues={dateTicks}	
@@ -65,7 +65,8 @@ export default class Victory extends React.Component {
 					x={"feelingDate"}
 					y={"feelingNum"}
 				/>
-			</svg>
+				</svg>
+				</div>	
 			// </VictoryChart>
 		)
 	}

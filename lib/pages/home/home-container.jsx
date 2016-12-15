@@ -21,7 +21,9 @@ import {
   Spinner,
   DatePickerFactory,
   Toaster,
-  Position
+  Position,
+  Slider,
+  RangeSlider
 } from "@blueprintjs/core";
 import { OurToaster } from "./toaster.jsx";
 
@@ -54,10 +56,21 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <div>
+       <div style={{ width: "100%" }}>
+                <Slider
+                    min={0}
+                    max={100}
+                    stepSize={1}
+                    labelStepSize={10}
+          />
+        </div>
+      <div id="row-content">
+
         <button onClick={this.browserPush}>toast</button>
-        <CommentForm className="commentBox" onCommentSubmit={this.handleCommentSubmit}/>
         <Victory className="chart" emotionData={this.props.data}/>
-      </div>
+        <CommentForm className="commentBox" onCommentSubmit={this.handleCommentSubmit}/>
+        </div>
+        </div>
     )
   }
 }

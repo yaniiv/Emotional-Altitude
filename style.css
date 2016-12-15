@@ -2,8 +2,12 @@ body {
   background-color: #eeeeff; }
 
 #content {
-  padding-top: 50px;
-  display: flex; }
+  padding-top: 50px; }
+
+#row-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
 
 .emotion-input {
   min-width: 400px;
@@ -26,9 +30,10 @@ input[type=submit] {
   border: 0 none;
   cursor: pointer; }
 
-#commentBox {
-  margin: 0 auto;
-  width: 1200px;
-  text-align: center; }
+.commentForm {
+  flex-grow: 1; }
+
+#eChart {
+  flex-grow: 1; }
 
 /*# sourceMappingURL=style.css.map */

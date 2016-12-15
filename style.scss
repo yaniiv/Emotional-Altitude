@@ -6,7 +6,12 @@ body {
 
 #content{
     padding-top: $pt-navbar-height;
+}
+
+#row-content{
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .emotion-input {
@@ -34,10 +39,18 @@ input[type=submit] {
     cursor:pointer;
 }
 
-#commentBox { 
-    margin: 0 auto; 
-    width:1200px;
-    text-align: center;
+// #commentBox { 
+//     margin: 0 auto; 
+//     width:1200px;
+//     text-align: center;
+// }
+
+.commentForm {
+    flex-grow: 1;
+}
+
+#eChart {
+    flex-grow:1;
 }
 
 

@@ -3,7 +3,10 @@ import { Slider } from "@blueprintjs/core";
 
 
 export default class CommentForm extends React.Component {
-
+  constructor() {
+    super()
+  }
+  
   render () {
     return (
       <div>
