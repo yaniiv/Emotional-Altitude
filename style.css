@@ -1,0 +1,33 @@
+body {
+  background-color: #eeeeff; }
+
+#content {
+  padding-top: 50px; }
+
+.emotion-input {
+  min-width: 400px;
+  min-height: 40px;
+  font-size: 20px; }
+
+input[type=date] {
+  min-width: 300px;
+  min-height: 40px;
+  font-size: 20px; }
+
+.text-input {
+  min-width: 300px;
+  min-height: 40px;
+  font-size: 20px; }
+
+input[type=submit] {
+  height: 40px;
+  background: #ccc;
+  border: 0 none;
+  cursor: pointer; }
+
+#commentBox {
+  margin: 0 auto;
+  width: 1200px;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
