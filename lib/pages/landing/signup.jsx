@@ -32,8 +32,7 @@ class Signup extends React.Component {
           })
           browserHistory.push('/home');
           }
-        }
-       
+        }  
     });
   }
 

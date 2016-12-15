@@ -2,8 +2,12 @@
 1 verbose cli [ '/Users/ygoldobin/.nvm/versions/node/v4.6.0/bin/node',
 1 verbose cli   '/Users/ygoldobin/.nvm/versions/node/v4.6.0/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   '--save-dev',
-1 verbose cli   'sass' ]
+1 verbose cli   '--save',
+1 verbose cli   '@types/dom4',
+1 verbose cli   '@types/pure-render-decorator',
+1 verbose cli   '@types/react',
+1 verbose cli   '@types/react-dom',
+1 verbose cli   '@types/react-addons-css-transition-group' ]
 2 info using npm@2.15.9
 3 info using node@v4.6.0
 4 verbose install initial load of /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/package.json
@@ -488,417 +492,1055 @@
 483 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/rimraf/package.json
 484 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/ripemd160/package.json
 485 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/rw/package.json
-486 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass-loader/package.json
-487 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/semver/package.json
-488 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/semver-diff/package.json
-489 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/semver-regex/package.json
-490 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/semver-truncate/package.json
-491 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/send/package.json
-492 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sequelize/package.json
-493 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/serve-index/package.json
-494 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/serve-static/package.json
-495 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/set-immediate-shim/package.json
-496 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/setprototypeof/package.json
-497 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sha.js/package.json
-498 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/shebang-regex/package.json
-499 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/signal-exit/package.json
-500 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/slash/package.json
-501 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sliced/package.json
-502 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/slide/package.json
-503 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sntp/package.json
-504 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/socket.io/package.json
-505 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/socket.io-adapter/package.json
-506 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/socket.io-client/package.json
-507 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/socket.io-parser/package.json
-508 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/source-list-map/package.json
-509 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/source-map/package.json
-510 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/source-map-support/package.json
-511 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/spdx-correct/package.json
-512 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/spdx-expression-parse/package.json
-513 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/spdx-license-ids/package.json
-514 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/split/package.json
-515 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sprintf-js/package.json
-516 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sshpk/package.json
-517 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/statuses/package.json
-518 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/stream-browserify/package.json
-519 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/stream-cache/package.json
-520 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/stream-combiner/package.json
-521 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/stream-shift/package.json
-522 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/strict-uri-encode/package.json
-523 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/string-length/package.json
-524 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/string_decoder/package.json
-525 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/stringstream/package.json
-526 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/strip-ansi/package.json
-527 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/strip-bom/package.json
-528 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/strip-indent/package.json
-529 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/strip-json-comments/package.json
-530 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/style-loader/package.json
-531 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/supports-color/package.json
-532 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/tapable/package.json
-533 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/through/package.json
-534 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/timed-out/package.json
-535 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/timers-browserify/package.json
-536 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/to-array/package.json
-537 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/to-fast-properties/package.json
-538 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/touch/package.json
-539 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/tough-cookie/package.json
-540 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/tree-kill/package.json
-541 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/trim-newlines/package.json
-542 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/tty-browserify/package.json
-543 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/tunnel-agent/package.json
-544 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/tweetnacl/package.json
-545 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/type-is/package.json
-546 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/ua-parser-js/package.json
-547 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/uglify-js/package.json
-548 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/uglify-to-browserify/package.json
-549 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/ultron/package.json
-550 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/undefsafe/package.json
-551 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/unpipe/package.json
-552 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/update-notifier/package.json
-553 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/url/package.json
-554 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/url-loader/package.json
-555 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/user-home/package.json
-556 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/utf8/package.json
-557 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/util/package.json
-558 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/util-deprecate/package.json
-559 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/utils-merge/package.json
-560 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/uuid/package.json
-561 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/v8flags/package.json
-562 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/validate-npm-package-license/package.json
-563 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/vary/package.json
-564 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/verror/package.json
-565 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/victory/package.json
-566 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/victory-chart/package.json
-567 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/victory-core/package.json
-568 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/victory-pie/package.json
-569 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/vm-browserify/package.json
-570 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/warning/package.json
-571 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/watchpack/package.json
-572 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/webpack/package.json
-573 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/webpack-core/package.json
-574 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/webpack-dev-middleware/package.json
-575 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/webpack-dev-server/package.json
-576 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/whatwg-fetch/package.json
-577 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/window-size/package.json
-578 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/wordwrap/package.json
-579 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/wrappy/package.json
-580 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/write-file-atomic/package.json
-581 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/ws/package.json
-582 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/xdg-basedir/package.json
-583 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/xmlhttprequest/package.json
-584 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/xmlhttprequest-ssl/package.json
-585 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/xtend/package.json
-586 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/yargs/package.json
-587 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/yeast/package.json
-588 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@blueprintjs/core/package.json
-589 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@blueprintjs/datetime/package.json
-590 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@blueprintjs/table/package.json
-591 info package.json Base64@0.2.1 No license field.
-592 info package.json after@0.8.1 No license field.
-593 info package.json arr-flatten@1.0.1 license should be a valid SPDX license expression
-594 info package.json array-unique@0.2.1 license should be a valid SPDX license expression
-595 info package.json arraybuffer.slice@0.0.6 No license field.
+486 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass/package.json
+487 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass-loader/package.json
+488 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/semver/package.json
+489 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/semver-diff/package.json
+490 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/semver-regex/package.json
+491 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/semver-truncate/package.json
+492 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/send/package.json
+493 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sequelize/package.json
+494 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/serve-index/package.json
+495 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/serve-static/package.json
+496 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/set-immediate-shim/package.json
+497 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/setprototypeof/package.json
+498 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sha.js/package.json
+499 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/shebang-regex/package.json
+500 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/signal-exit/package.json
+501 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/slash/package.json
+502 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sliced/package.json
+503 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/slide/package.json
+504 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sntp/package.json
+505 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/socket.io/package.json
+506 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/socket.io-adapter/package.json
+507 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/socket.io-client/package.json
+508 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/socket.io-parser/package.json
+509 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/source-list-map/package.json
+510 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/source-map/package.json
+511 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/source-map-support/package.json
+512 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/spdx-correct/package.json
+513 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/spdx-expression-parse/package.json
+514 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/spdx-license-ids/package.json
+515 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/split/package.json
+516 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sprintf-js/package.json
+517 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sshpk/package.json
+518 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/statuses/package.json
+519 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/stream-browserify/package.json
+520 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/stream-cache/package.json
+521 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/stream-combiner/package.json
+522 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/stream-shift/package.json
+523 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/strict-uri-encode/package.json
+524 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/string-length/package.json
+525 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/string_decoder/package.json
+526 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/stringstream/package.json
+527 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/strip-ansi/package.json
+528 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/strip-bom/package.json
+529 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/strip-indent/package.json
+530 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/strip-json-comments/package.json
+531 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/style-loader/package.json
+532 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/supports-color/package.json
+533 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/tapable/package.json
+534 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/through/package.json
+535 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/timed-out/package.json
+536 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/timers-browserify/package.json
+537 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/to-array/package.json
+538 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/to-fast-properties/package.json
+539 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/touch/package.json
+540 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/tough-cookie/package.json
+541 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/tree-kill/package.json
+542 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/trim-newlines/package.json
+543 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/tty-browserify/package.json
+544 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/tunnel-agent/package.json
+545 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/tweetnacl/package.json
+546 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/type-is/package.json
+547 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/ua-parser-js/package.json
+548 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/uglify-js/package.json
+549 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/uglify-to-browserify/package.json
+550 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/ultron/package.json
+551 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/undefsafe/package.json
+552 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/unpipe/package.json
+553 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/update-notifier/package.json
+554 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/url/package.json
+555 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/url-loader/package.json
+556 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/user-home/package.json
+557 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/utf8/package.json
+558 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/util/package.json
+559 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/util-deprecate/package.json
+560 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/utils-merge/package.json
+561 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/uuid/package.json
+562 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/v8flags/package.json
+563 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/validate-npm-package-license/package.json
+564 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/vary/package.json
+565 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/verror/package.json
+566 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/victory/package.json
+567 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/victory-chart/package.json
+568 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/victory-core/package.json
+569 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/victory-pie/package.json
+570 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/vm-browserify/package.json
+571 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/warning/package.json
+572 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/watchpack/package.json
+573 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/webpack/package.json
+574 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/webpack-core/package.json
+575 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/webpack-dev-middleware/package.json
+576 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/webpack-dev-server/package.json
+577 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/whatwg-fetch/package.json
+578 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/window-size/package.json
+579 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/wordwrap/package.json
+580 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/wrappy/package.json
+581 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/write-file-atomic/package.json
+582 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/ws/package.json
+583 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/xdg-basedir/package.json
+584 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/xmlhttprequest/package.json
+585 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/xmlhttprequest-ssl/package.json
+586 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/xtend/package.json
+587 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/yargs/package.json
+588 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/yeast/package.json
+589 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@blueprintjs/core/package.json
+590 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@blueprintjs/datetime/package.json
+591 verbose installManyTop reading scoped package data from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@blueprintjs/table/package.json
+592 info package.json Base64@0.2.1 No license field.
+593 info package.json after@0.8.1 No license field.
+594 info package.json arr-flatten@1.0.1 license should be a valid SPDX license expression
+595 info package.json array-unique@0.2.1 license should be a valid SPDX license expression
 596 info package.json assert@1.4.1 assert is also the name of a node core module.
-597 info package.json babel-plugin-syntax-flow@6.13.0 No description
-598 info package.json babel-plugin-syntax-jsx@6.13.0 No description
-599 info package.json babel-plugin-transform-regenerator@6.14.0 license should be a valid SPDX license expression
-600 info package.json babel-traverse@6.15.0 No description
-601 info package.json base64-arraybuffer@0.1.2 No license field.
-602 info package.json base64id@0.1.0 No license field.
-603 info package.json batch@0.5.3 No license field.
-604 info package.json bcrypt-pbkdf@1.0.0 No repository field.
-605 info package.json benchmark@1.0.0 No license field.
-606 info package.json better-assert@1.0.2 No license field.
-607 info package.json blob@0.0.4 No license field.
-608 info package.json buffer@4.9.1 buffer is also the name of a node core module.
-609 info package.json callsite@1.0.0 No repository field.
-610 info package.json callsite@1.0.0 No license field.
-611 info package.json component-bind@1.0.0 No license field.
-612 info package.json component-emitter@1.1.2 No license field.
-613 info package.json component-inherit@0.0.3 No license field.
-614 info package.json console-browserify@1.1.0 No license field.
-615 info package.json date-now@0.1.4 No license field.
-616 info package.json dom-walk@0.1.1 No license field.
-617 info package.json duplexer@0.1.1 No license field.
-618 info package.json engine.io-parser@1.2.4 No license field.
+597 info package.json arraybuffer.slice@0.0.6 No license field.
+598 info package.json babel-plugin-syntax-flow@6.13.0 No description
+599 info package.json babel-plugin-syntax-jsx@6.13.0 No description
+600 info package.json babel-plugin-transform-regenerator@6.14.0 license should be a valid SPDX license expression
+601 info package.json babel-traverse@6.15.0 No description
+602 info package.json base64-arraybuffer@0.1.2 No license field.
+603 info package.json base64id@0.1.0 No license field.
+604 info package.json batch@0.5.3 No license field.
+605 info package.json bcrypt-pbkdf@1.0.0 No repository field.
+606 info package.json benchmark@1.0.0 No license field.
+607 info package.json better-assert@1.0.2 No license field.
+608 info package.json blob@0.0.4 No license field.
+609 info package.json buffer@4.9.1 buffer is also the name of a node core module.
+610 info package.json callsite@1.0.0 No repository field.
+611 info package.json callsite@1.0.0 No license field.
+612 info package.json component-bind@1.0.0 No license field.
+613 info package.json component-emitter@1.1.2 No license field.
+614 info package.json component-inherit@0.0.3 No license field.
+615 info package.json console-browserify@1.1.0 No license field.
+616 info package.json date-now@0.1.4 No license field.
+617 info package.json dom-walk@0.1.1 No license field.
+618 info package.json duplexer@0.1.1 No license field.
 619 info package.json enhanced-resolve@0.9.1 No license field.
-620 info package.json esprima-fb@15001.1.0-dev-harmony-fb No license field.
+620 info package.json engine.io-parser@1.2.4 No license field.
 621 info package.json esutils@2.0.2 No license field.
 622 info package.json events@1.1.1 events is also the name of a node core module.
-623 info package.json extsprintf@1.0.2 No license field.
+623 info package.json esprima-fb@15001.1.0-dev-harmony-fb No license field.
 624 info package.json filename-regex@2.0.0 license should be a valid SPDX license expression
-625 info package.json glob-base@0.3.0 license should be a valid SPDX license expression
-626 info package.json global@4.3.0 No license field.
-627 info package.json has-binary@0.1.7 No repository field.
-628 info package.json hoist-non-react-statics@1.2.0 No license field.
-629 info package.json hooks-fixed@1.2.0 No license field.
-630 info package.json http-browserify@1.7.0 license should be a valid SPDX license expression
-631 info package.json indexof@0.0.1 No repository field.
-632 info package.json indexof@0.0.1 No license field.
-633 info package.json is-primitive@2.0.0 license should be a valid SPDX license expression
-634 info package.json jsbn@0.1.0 license should be a valid SPDX license expression
-635 info package.json jsesc@0.5.0 No license field.
-636 info package.json json-schema@0.2.2 No license field.
-637 info package.json json3@3.2.6 No license field.
-638 info package.json kareem@1.1.3 license should be a valid SPDX license expression
-639 info package.json longest@1.0.1 license should be a valid SPDX license expression
-640 info package.json map-stream@0.1.0 No license field.
+625 info package.json extsprintf@1.0.2 No license field.
+626 info package.json glob-base@0.3.0 license should be a valid SPDX license expression
+627 info package.json global@4.3.0 No license field.
+628 info package.json has-binary@0.1.7 No repository field.
+629 info package.json hoist-non-react-statics@1.2.0 No license field.
+630 info package.json hooks-fixed@1.2.0 No license field.
+631 info package.json http-browserify@1.7.0 license should be a valid SPDX license expression
+632 info package.json indexof@0.0.1 No repository field.
+633 info package.json indexof@0.0.1 No license field.
+634 info package.json is-primitive@2.0.0 license should be a valid SPDX license expression
+635 info package.json jsbn@0.1.0 license should be a valid SPDX license expression
+636 info package.json jsesc@0.5.0 No license field.
+637 info package.json json-schema@0.2.2 No license field.
+638 info package.json json3@3.2.6 No license field.
+639 info package.json kareem@1.1.3 license should be a valid SPDX license expression
+640 info package.json longest@1.0.1 license should be a valid SPDX license expression
 641 info package.json mime@1.3.4 No license field.
-642 info package.json min-document@2.18.1 No license field.
-643 info package.json ms@0.7.1 No license field.
-644 info package.json node-uuid@1.4.7 No license field.
-645 info package.json nopt@1.0.10 license should be a valid SPDX license expression
-646 info package.json object-component@0.0.3 No repository field.
-647 info package.json object-component@0.0.3 No license field.
-648 info package.json optimist@0.6.1 license should be a valid SPDX license expression
-649 info package.json options@0.0.6 No license field.
-650 info package.json parsejson@0.0.1 No repository field.
-651 info package.json parseqs@0.0.2 No repository field.
+642 info package.json map-stream@0.1.0 No license field.
+643 info package.json min-document@2.18.1 No license field.
+644 info package.json ms@0.7.1 No license field.
+645 info package.json node-uuid@1.4.7 No license field.
+646 info package.json nopt@1.0.10 license should be a valid SPDX license expression
+647 info package.json optimist@0.6.1 license should be a valid SPDX license expression
+648 info package.json object-component@0.0.3 No repository field.
+649 info package.json object-component@0.0.3 No license field.
+650 info package.json options@0.0.6 No license field.
+651 info package.json parsejson@0.0.1 No repository field.
 652 info package.json path@0.12.7 path is also the name of a node core module.
-653 info package.json pause-stream@0.0.11 license should be a valid SPDX license expression
-654 info package.json pg-hstore@2.3.2 No license field.
-655 info package.json preserve@0.2.0 license should be a valid SPDX license expression
-656 info package.json process@0.11.9 process is also the name of a node core module.
-657 info package.json punycode@1.4.1 punycode is also the name of a node core module.
-658 info package.json q@1.4.1 license should be a valid SPDX license expression
-659 info package.json querystring@0.2.0 querystring is also the name of a node core module.
-660 info package.json querystring@0.2.0 No license field.
-661 info package.json querystring-es3@0.2.1 No license field.
-662 info package.json regjsparser@0.1.5 license should be a valid SPDX license expression
-663 info package.json repeat-element@1.1.2 license should be a valid SPDX license expression
-664 info package.json ripemd160@0.2.0 No license field.
-665 info package.json sntp@1.0.9 No license field.
-666 info package.json source-map-support@0.2.10 No license field.
-667 info package.json stream-cache@0.0.2 No license field.
-668 info package.json string_decoder@0.10.31 string_decoder is also the name of a node core module.
-669 info package.json timers-browserify@1.4.2 No license field.
-670 info package.json to-array@0.1.4 No license field.
-671 info package.json tweetnacl@0.13.3 license should be a valid SPDX license expression
-672 info package.json ua-parser-js@0.7.10 No license field.
-673 info package.json undefsafe@0.0.3 license should be a valid SPDX license expression
-674 info package.json url@0.10.3 url is also the name of a node core module.
-675 info package.json util@0.10.3 util is also the name of a node core module.
-676 info package.json utils-merge@1.0.0 No license field.
-677 info package.json v8flags@2.0.11 No license field.
-678 info package.json verror@1.3.6 No license field.
-679 info package.json webpack-core@0.6.8 No license field.
-680 info package.json webpack-dev-middleware@1.6.1 No license field.
-681 info package.json whatwg-fetch@0.9.0 No license field.
-682 info package.json window-size@0.1.0 No license field.
-683 info package.json xmlhttprequest-ssl@1.5.1 No license field.
-684 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/package.json
-685 silly cache add args [ 'sass', null ]
-686 verbose cache add spec sass
-687 silly cache add parsed spec Result {
-687 silly cache add   raw: 'sass',
-687 silly cache add   scope: null,
-687 silly cache add   name: 'sass',
-687 silly cache add   rawSpec: '',
-687 silly cache add   spec: 'latest',
-687 silly cache add   type: 'tag' }
-688 silly addNamed sass@latest
-689 verbose addNamed "latest" is being treated as a dist-tag for sass
-690 info addNameTag [ 'sass', 'latest' ]
-691 silly mapToRegistry name sass
-692 silly mapToRegistry using default registry
-693 silly mapToRegistry registry https://registry.npmjs.org/
-694 silly mapToRegistry data Result {
-694 silly mapToRegistry   raw: 'sass',
-694 silly mapToRegistry   scope: null,
-694 silly mapToRegistry   name: 'sass',
-694 silly mapToRegistry   rawSpec: '',
-694 silly mapToRegistry   spec: 'latest',
-694 silly mapToRegistry   type: 'tag' }
-695 silly mapToRegistry uri https://registry.npmjs.org/sass
-696 verbose addNameTag registry:https://registry.npmjs.org/sass not in flight; fetching
-697 verbose request uri https://registry.npmjs.org/sass
-698 verbose request no auth needed
-699 info attempt registry request try #1 at 9:27:03 AM
-700 verbose request id 73b78b60d98fc75e
-701 verbose etag W/"4ac2421d-c0c"
-702 verbose lastModified Tue, 29 Sep 2009 17:21:33 GMT
-703 http request GET https://registry.npmjs.org/sass
-704 http 304 https://registry.npmjs.org/sass
-705 verbose headers { date: 'Thu, 15 Dec 2016 17:27:03 GMT',
-705 verbose headers   via: '1.1 varnish',
-705 verbose headers   'cache-control': 'max-age=300',
-705 verbose headers   etag: 'W/"4ac2421d-c0c"',
-705 verbose headers   age: '0',
-705 verbose headers   connection: 'keep-alive',
-705 verbose headers   'x-served-by': 'cache-lax8629-LAX',
-705 verbose headers   'x-cache': 'MISS',
-705 verbose headers   'x-cache-hits': '0',
-705 verbose headers   'x-timer': 'S1481822823.220950,VS0,VE35',
-705 verbose headers   vary: 'Accept-Encoding' }
-706 silly get cb [ 304,
-706 silly get   { date: 'Thu, 15 Dec 2016 17:27:03 GMT',
-706 silly get     via: '1.1 varnish',
-706 silly get     'cache-control': 'max-age=300',
-706 silly get     etag: 'W/"4ac2421d-c0c"',
-706 silly get     age: '0',
-706 silly get     connection: 'keep-alive',
-706 silly get     'x-served-by': 'cache-lax8629-LAX',
-706 silly get     'x-cache': 'MISS',
-706 silly get     'x-cache-hits': '0',
-706 silly get     'x-timer': 'S1481822823.220950,VS0,VE35',
-706 silly get     vary: 'Accept-Encoding' } ]
-707 verbose etag https://registry.npmjs.org/sass from cache
-708 verbose get saving sass to /Users/ygoldobin/.npm/registry.npmjs.org/sass/.cache.json
-709 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
-710 silly addNameTag next cb for sass with tag latest
-711 silly addNamed sass@0.5.0
-712 verbose addNamed "0.5.0" is a plain semver version for sass
-713 silly cache afterAdd sass@0.5.0
-714 verbose afterAdd /Users/ygoldobin/.npm/sass/0.5.0/package/package.json not in flight; writing
-715 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
-716 verbose afterAdd /Users/ygoldobin/.npm/sass/0.5.0/package/package.json written
-717 silly install resolved [ { name: 'sass',
-717 silly install resolved     description: 'Syntactically Awesome Stylesheets (compiles to css)',
-717 silly install resolved     version: '0.5.0',
-717 silly install resolved     keywords: [ 'sass', 'template', 'css', 'view' ],
-717 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
-717 silly install resolved     contributors: [ [Object] ],
-717 silly install resolved     main: './lib/sass',
-717 silly install resolved     _id: 'sass@0.5.0',
-717 silly install resolved     engines: { node: '*' },
-717 silly install resolved     _nodeSupported: true,
-717 silly install resolved     _npmVersion: '0.2.7-2',
-717 silly install resolved     _nodeVersion: 'v0.3.1-pre',
-717 silly install resolved     dist:
-717 silly install resolved      { tarball: 'https://registry.npmjs.org/sass/-/sass-0.5.0.tgz',
-717 silly install resolved        shasum: '9dee1183a0f400361f2c5d3453bf2e54705e03f9' },
-717 silly install resolved     directories: {},
-717 silly install resolved     _shasum: '9dee1183a0f400361f2c5d3453bf2e54705e03f9',
-717 silly install resolved     _resolved: 'https://registry.npmjs.org/sass/-/sass-0.5.0.tgz',
-717 silly install resolved     _from: 'sass@latest',
-717 silly install resolved     readme: 'ERROR: No README data found!' } ]
-718 info install sass@0.5.0 into /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
-719 info installOne sass@0.5.0
-720 verbose installOne of sass to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude not in flight; installing
-721 verbose correctMkdir /Users/ygoldobin/.npm/_locks correctMkdir not in flight; initializing
-722 verbose lock using /Users/ygoldobin/.npm/_locks/sass-fec99187d9b4432f.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass
-723 silly install write writing sass 0.5.0 to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass
-724 verbose unbuild node_modules/sass
-725 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass is being purged from base /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
-726 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass
-727 verbose tar unpack /Users/ygoldobin/.npm/sass/0.5.0/package.tgz
-728 verbose tar unpacking to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass
-729 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass is being purged
-730 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass
-731 silly gunzTarPerm modes [ '755', '644' ]
-732 silly gunzTarPerm extractEntry
-733 silly gunzTarPerm extractEntry .gitignore
-734 silly gunzTarPerm extractEntry ._History.md
-735 silly gunzTarPerm extractEntry History.md
-736 silly gunzTarPerm extractEntry index.js
-737 silly gunzTarPerm extractEntry lib/
-738 silly gunzTarPerm extractEntry Makefile
-739 silly gunzTarPerm extractEntry ._package.json
-740 silly gunzTarPerm extractEntry package.json
-741 silly gunzTarPerm extractEntry ._Readme.md
-742 warn excluding symbolic link index.js -> lib/sass.js
-743 silly gunzTarPerm extractEntry Readme.md
-744 silly gunzTarPerm extractEntry spec/
-745 silly gunzTarPerm extractEntry spec/fixtures/
-746 silly gunzTarPerm extractEntry spec/lib/
-747 silly gunzTarPerm extractEntry spec/node.js
-748 silly gunzTarPerm extractEntry spec/spec.core.js
-749 silly gunzTarPerm extractEntry spec/lib/images/
-750 silly gunzTarPerm extractEntry spec/lib/jspec.css
-751 silly gunzTarPerm extractEntry spec/lib/jspec.growl.js
-752 silly gunzTarPerm extractEntry spec/lib/jspec.jquery.js
-753 silly gunzTarPerm extractEntry spec/lib/jspec.js
-754 silly gunzTarPerm extractEntry spec/lib/jspec.nodejs.js
-755 silly gunzTarPerm extractEntry spec/lib/jspec.shell.js
-756 silly gunzTarPerm extractEntry spec/lib/jspec.timers.js
-757 silly gunzTarPerm extractEntry spec/lib/jspec.xhr.js
-758 silly gunzTarPerm extractEntry spec/lib/images/bg.png
-759 silly gunzTarPerm extractEntry spec/lib/images/hr.png
-760 silly gunzTarPerm extractEntry spec/lib/images/loading.gif
-761 silly gunzTarPerm extractEntry spec/lib/images/sprites.bg.png
-762 silly gunzTarPerm extractEntry spec/lib/images/sprites.png
-763 silly gunzTarPerm extractEntry spec/lib/images/vr.png
-764 silly gunzTarPerm extractEntry spec/fixtures/collect.sass
-765 silly gunzTarPerm extractEntry spec/fixtures/._comment.css
-766 silly gunzTarPerm extractEntry spec/fixtures/comment.css
-767 silly gunzTarPerm extractEntry spec/fixtures/._comment.sass
-768 silly gunzTarPerm extractEntry spec/fixtures/comment.sass
-769 silly gunzTarPerm extractEntry spec/fixtures/continuation.css
-770 silly gunzTarPerm extractEntry spec/fixtures/continuation.sass
-771 silly gunzTarPerm extractEntry spec/fixtures/literal.css
-772 silly gunzTarPerm extractEntry spec/fixtures/._literal.sass
-773 silly gunzTarPerm extractEntry spec/fixtures/literal.sass
-774 silly gunzTarPerm extractEntry spec/fixtures/mixin.css
-775 silly gunzTarPerm extractEntry spec/fixtures/mixin.multiple.css
-776 silly gunzTarPerm extractEntry spec/fixtures/mixin.multiple.sass
-777 silly gunzTarPerm extractEntry spec/fixtures/._mixin.sass
-778 silly gunzTarPerm extractEntry spec/fixtures/mixin.sass
-779 silly gunzTarPerm extractEntry spec/fixtures/mixin.undefined.sass
-780 silly gunzTarPerm extractEntry spec/fixtures/properties.css
-781 silly gunzTarPerm extractEntry spec/fixtures/properties.expand.css
-782 silly gunzTarPerm extractEntry spec/fixtures/properties.expand.sass
-783 silly gunzTarPerm extractEntry spec/fixtures/._properties.invalid.sass
-784 silly gunzTarPerm extractEntry spec/fixtures/properties.invalid.sass
-785 silly gunzTarPerm extractEntry spec/fixtures/._properties.nested.css
-786 silly gunzTarPerm extractEntry spec/fixtures/properties.nested.css
-787 silly gunzTarPerm extractEntry spec/fixtures/properties.nested.invalid.sass
-788 silly gunzTarPerm extractEntry spec/fixtures/._properties.nested.sass
-789 silly gunzTarPerm extractEntry spec/fixtures/properties.nested.sass
-790 silly gunzTarPerm extractEntry spec/fixtures/properties.sass
-791 silly gunzTarPerm extractEntry spec/fixtures/selectors.css
-792 silly gunzTarPerm extractEntry spec/fixtures/selectors.sass
-793 silly gunzTarPerm extractEntry spec/fixtures/variables.alternate.css
-794 silly gunzTarPerm extractEntry spec/fixtures/variables.alternate.sass
-795 silly gunzTarPerm extractEntry spec/fixtures/variables.css
-796 silly gunzTarPerm extractEntry spec/fixtures/variables.dependent.css
-797 silly gunzTarPerm extractEntry spec/fixtures/variables.dependent.sass
-798 silly gunzTarPerm extractEntry spec/fixtures/variables.regular.css
-799 silly gunzTarPerm extractEntry spec/fixtures/variables.regular.sass
-800 silly gunzTarPerm extractEntry spec/fixtures/variables.sass
-801 silly gunzTarPerm extractEntry lib/index.js
-802 silly gunzTarPerm extractEntry lib/._sass.js
-803 silly gunzTarPerm extractEntry lib/sass.js
-804 warn excluding symbolic link lib/index.js -> sass.js
-805 verbose write writing to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass/package.json
-806 info preinstall sass@0.5.0
-807 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass/package.json
-808 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass/package.json
-809 silly install resolved []
-810 verbose about to build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass
-811 info build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass
-812 info linkStuff sass@0.5.0
-813 silly linkStuff sass@0.5.0 has /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules as its parent node_modules
-814 verbose linkBins sass@0.5.0
-815 verbose linkMans sass@0.5.0
-816 verbose rebuildBundles sass@0.5.0
-817 info install sass@0.5.0
-818 info postinstall sass@0.5.0
-819 verbose unlock done using /Users/ygoldobin/.npm/_locks/sass-fec99187d9b4432f.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/sass
-820 verbose validateInstall loading /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/package.json for validation
-821 warn unmet dependency /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/builder-victory-component requires style-loader@'^0.8.0' but will load
-821 warn unmet dependency /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/style-loader,
-821 warn unmet dependency which is version 0.13.1
-822 verbose stack Error: The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
-822 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/lib/install.js:125:32
-822 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/lib/install.js:268:7
-822 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
-822 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-822 verbose stack     at cb (/Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-822 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-822 verbose stack     at cb (/Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-822 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-822 verbose stack     at cb (/Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-822 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-823 verbose cwd /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
-824 error Darwin 16.1.0
-825 error argv "/Users/ygoldobin/.nvm/versions/node/v4.6.0/bin/node" "/Users/ygoldobin/.nvm/versions/node/v4.6.0/bin/npm" "install" "--save-dev" "sass"
-826 error node v4.6.0
-827 error npm  v2.15.9
-828 error code EPEERINVALID
-829 error peerinvalid The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
-829 error peerinvalid Peer react-dom@0.14.7 wants react@^0.14.7
-829 error peerinvalid Peer react-router@2.7.0 wants react@^0.14.0 || ^15.0.0
-829 error peerinvalid Peer react-addons-css-transition-group@15.4.1 wants react@^15.4.1
-829 error peerinvalid Peer react-redux@4.4.5 wants react@^0.14.0 || ^15.0.0-0
-829 error peerinvalid Peer @blueprintjs/core@1.2.0 wants react@^15.0.1 || ^0.14
-830 verbose exit [ 1, true ]
+653 info package.json parseqs@0.0.2 No repository field.
+654 info package.json pause-stream@0.0.11 license should be a valid SPDX license expression
+655 info package.json pg-hstore@2.3.2 No license field.
+656 info package.json preserve@0.2.0 license should be a valid SPDX license expression
+657 info package.json process@0.11.9 process is also the name of a node core module.
+658 info package.json punycode@1.4.1 punycode is also the name of a node core module.
+659 info package.json querystring-es3@0.2.1 No license field.
+660 info package.json q@1.4.1 license should be a valid SPDX license expression
+661 info package.json querystring@0.2.0 querystring is also the name of a node core module.
+662 info package.json querystring@0.2.0 No license field.
+663 info package.json regjsparser@0.1.5 license should be a valid SPDX license expression
+664 info package.json repeat-element@1.1.2 license should be a valid SPDX license expression
+665 info package.json ripemd160@0.2.0 No license field.
+666 info package.json sass@0.5.0 No repository field.
+667 info package.json sass@0.5.0 No license field.
+668 info package.json sntp@1.0.9 No license field.
+669 info package.json source-map-support@0.2.10 No license field.
+670 info package.json stream-cache@0.0.2 No license field.
+671 info package.json string_decoder@0.10.31 string_decoder is also the name of a node core module.
+672 info package.json timers-browserify@1.4.2 No license field.
+673 info package.json to-array@0.1.4 No license field.
+674 info package.json tweetnacl@0.13.3 license should be a valid SPDX license expression
+675 info package.json ua-parser-js@0.7.10 No license field.
+676 info package.json undefsafe@0.0.3 license should be a valid SPDX license expression
+677 info package.json url@0.10.3 url is also the name of a node core module.
+678 info package.json utils-merge@1.0.0 No license field.
+679 info package.json util@0.10.3 util is also the name of a node core module.
+680 info package.json v8flags@2.0.11 No license field.
+681 info package.json verror@1.3.6 No license field.
+682 info package.json webpack-core@0.6.8 No license field.
+683 info package.json webpack-dev-middleware@1.6.1 No license field.
+684 info package.json whatwg-fetch@0.9.0 No license field.
+685 info package.json window-size@0.1.0 No license field.
+686 info package.json xmlhttprequest-ssl@1.5.1 No license field.
+687 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/package.json
+688 silly cache add args [ '@types/dom4', null ]
+689 verbose cache add spec @types/dom4
+690 silly cache add args [ '@types/pure-render-decorator', null ]
+691 verbose cache add spec @types/pure-render-decorator
+692 silly cache add args [ '@types/react', null ]
+693 verbose cache add spec @types/react
+694 silly cache add args [ '@types/react-dom', null ]
+695 verbose cache add spec @types/react-dom
+696 silly cache add args [ '@types/react-addons-css-transition-group', null ]
+697 verbose cache add spec @types/react-addons-css-transition-group
+698 silly cache add parsed spec Result {
+698 silly cache add   raw: '@types/dom4',
+698 silly cache add   scope: '@types',
+698 silly cache add   name: '@types/dom4',
+698 silly cache add   rawSpec: '',
+698 silly cache add   spec: 'latest',
+698 silly cache add   type: 'tag' }
+699 silly addNamed @types/dom4@latest
+700 verbose addNamed "latest" is being treated as a dist-tag for @types/dom4
+701 info addNameTag [ '@types/dom4', 'latest' ]
+702 silly mapToRegistry name @types/dom4
+703 silly mapToRegistry scope (from package name) @types
+704 verbose mapToRegistry no registry URL found in name for scope @types
+705 silly mapToRegistry using default registry
+706 silly mapToRegistry registry https://registry.npmjs.org/
+707 silly mapToRegistry data Result {
+707 silly mapToRegistry   raw: '@types/dom4',
+707 silly mapToRegistry   scope: '@types',
+707 silly mapToRegistry   name: '@types/dom4',
+707 silly mapToRegistry   rawSpec: '',
+707 silly mapToRegistry   spec: 'latest',
+707 silly mapToRegistry   type: 'tag' }
+708 silly mapToRegistry uri https://registry.npmjs.org/@types%2fdom4
+709 verbose addNameTag registry:https://registry.npmjs.org/@types%2fdom4 not in flight; fetching
+710 silly cache add parsed spec Result {
+710 silly cache add   raw: '@types/pure-render-decorator',
+710 silly cache add   scope: '@types',
+710 silly cache add   name: '@types/pure-render-decorator',
+710 silly cache add   rawSpec: '',
+710 silly cache add   spec: 'latest',
+710 silly cache add   type: 'tag' }
+711 silly addNamed @types/pure-render-decorator@latest
+712 verbose addNamed "latest" is being treated as a dist-tag for @types/pure-render-decorator
+713 info addNameTag [ '@types/pure-render-decorator', 'latest' ]
+714 silly mapToRegistry name @types/pure-render-decorator
+715 silly mapToRegistry scope (from package name) @types
+716 verbose mapToRegistry no registry URL found in name for scope @types
+717 silly mapToRegistry using default registry
+718 silly mapToRegistry registry https://registry.npmjs.org/
+719 silly mapToRegistry data Result {
+719 silly mapToRegistry   raw: '@types/pure-render-decorator',
+719 silly mapToRegistry   scope: '@types',
+719 silly mapToRegistry   name: '@types/pure-render-decorator',
+719 silly mapToRegistry   rawSpec: '',
+719 silly mapToRegistry   spec: 'latest',
+719 silly mapToRegistry   type: 'tag' }
+720 silly mapToRegistry uri https://registry.npmjs.org/@types%2fpure-render-decorator
+721 verbose addNameTag registry:https://registry.npmjs.org/@types%2fpure-render-decorator not in flight; fetching
+722 silly cache add parsed spec Result {
+722 silly cache add   raw: '@types/react',
+722 silly cache add   scope: '@types',
+722 silly cache add   name: '@types/react',
+722 silly cache add   rawSpec: '',
+722 silly cache add   spec: 'latest',
+722 silly cache add   type: 'tag' }
+723 silly addNamed @types/react@latest
+724 verbose addNamed "latest" is being treated as a dist-tag for @types/react
+725 info addNameTag [ '@types/react', 'latest' ]
+726 silly mapToRegistry name @types/react
+727 silly mapToRegistry scope (from package name) @types
+728 verbose mapToRegistry no registry URL found in name for scope @types
+729 silly mapToRegistry using default registry
+730 silly mapToRegistry registry https://registry.npmjs.org/
+731 silly mapToRegistry data Result {
+731 silly mapToRegistry   raw: '@types/react',
+731 silly mapToRegistry   scope: '@types',
+731 silly mapToRegistry   name: '@types/react',
+731 silly mapToRegistry   rawSpec: '',
+731 silly mapToRegistry   spec: 'latest',
+731 silly mapToRegistry   type: 'tag' }
+732 silly mapToRegistry uri https://registry.npmjs.org/@types%2freact
+733 verbose addNameTag registry:https://registry.npmjs.org/@types%2freact not in flight; fetching
+734 silly cache add parsed spec Result {
+734 silly cache add   raw: '@types/react-dom',
+734 silly cache add   scope: '@types',
+734 silly cache add   name: '@types/react-dom',
+734 silly cache add   rawSpec: '',
+734 silly cache add   spec: 'latest',
+734 silly cache add   type: 'tag' }
+735 silly addNamed @types/react-dom@latest
+736 verbose addNamed "latest" is being treated as a dist-tag for @types/react-dom
+737 info addNameTag [ '@types/react-dom', 'latest' ]
+738 silly mapToRegistry name @types/react-dom
+739 silly mapToRegistry scope (from package name) @types
+740 verbose mapToRegistry no registry URL found in name for scope @types
+741 silly mapToRegistry using default registry
+742 silly mapToRegistry registry https://registry.npmjs.org/
+743 silly mapToRegistry data Result {
+743 silly mapToRegistry   raw: '@types/react-dom',
+743 silly mapToRegistry   scope: '@types',
+743 silly mapToRegistry   name: '@types/react-dom',
+743 silly mapToRegistry   rawSpec: '',
+743 silly mapToRegistry   spec: 'latest',
+743 silly mapToRegistry   type: 'tag' }
+744 silly mapToRegistry uri https://registry.npmjs.org/@types%2freact-dom
+745 verbose addNameTag registry:https://registry.npmjs.org/@types%2freact-dom not in flight; fetching
+746 silly cache add parsed spec Result {
+746 silly cache add   raw: '@types/react-addons-css-transition-group',
+746 silly cache add   scope: '@types',
+746 silly cache add   name: '@types/react-addons-css-transition-group',
+746 silly cache add   rawSpec: '',
+746 silly cache add   spec: 'latest',
+746 silly cache add   type: 'tag' }
+747 silly addNamed @types/react-addons-css-transition-group@latest
+748 verbose addNamed "latest" is being treated as a dist-tag for @types/react-addons-css-transition-group
+749 info addNameTag [ '@types/react-addons-css-transition-group', 'latest' ]
+750 silly mapToRegistry name @types/react-addons-css-transition-group
+751 silly mapToRegistry scope (from package name) @types
+752 verbose mapToRegistry no registry URL found in name for scope @types
+753 silly mapToRegistry using default registry
+754 silly mapToRegistry registry https://registry.npmjs.org/
+755 silly mapToRegistry data Result {
+755 silly mapToRegistry   raw: '@types/react-addons-css-transition-group',
+755 silly mapToRegistry   scope: '@types',
+755 silly mapToRegistry   name: '@types/react-addons-css-transition-group',
+755 silly mapToRegistry   rawSpec: '',
+755 silly mapToRegistry   spec: 'latest',
+755 silly mapToRegistry   type: 'tag' }
+756 silly mapToRegistry uri https://registry.npmjs.org/@types%2freact-addons-css-transition-group
+757 verbose addNameTag registry:https://registry.npmjs.org/@types%2freact-addons-css-transition-group not in flight; fetching
+758 verbose request uri https://registry.npmjs.org/@types%2fdom4
+759 verbose request no auth needed
+760 info attempt registry request try #1 at 2:58:49 PM
+761 verbose request id b4e3ab26fe14c949
+762 verbose etag "57e02074-327e"
+763 http request GET https://registry.npmjs.org/@types%2fdom4
+764 verbose request uri https://registry.npmjs.org/@types%2fpure-render-decorator
+765 verbose request no auth needed
+766 info attempt registry request try #1 at 2:58:49 PM
+767 verbose etag "57e0287b-3544"
+768 http request GET https://registry.npmjs.org/@types%2fpure-render-decorator
+769 verbose request uri https://registry.npmjs.org/@types%2freact
+770 verbose request no auth needed
+771 info attempt registry request try #1 at 2:58:49 PM
+772 verbose etag "583c5bc0-88e8"
+773 http request GET https://registry.npmjs.org/@types%2freact
+774 verbose request uri https://registry.npmjs.org/@types%2freact-dom
+775 verbose request no auth needed
+776 info attempt registry request try #1 at 2:58:49 PM
+777 verbose etag "58330935-412c"
+778 http request GET https://registry.npmjs.org/@types%2freact-dom
+779 verbose request uri https://registry.npmjs.org/@types%2freact-addons-css-transition-group
+780 verbose request no auth needed
+781 info attempt registry request try #1 at 2:58:49 PM
+782 verbose etag "582a125d-49d9"
+783 http request GET https://registry.npmjs.org/@types%2freact-addons-css-transition-group
+784 http 304 https://registry.npmjs.org/@types%2freact-dom
+785 verbose headers { date: 'Thu, 15 Dec 2016 22:58:49 GMT',
+785 verbose headers   via: '1.1 varnish',
+785 verbose headers   'cache-control': 'max-age=0',
+785 verbose headers   etag: '"58330935-412c"',
+785 verbose headers   age: '0',
+785 verbose headers   connection: 'keep-alive',
+785 verbose headers   'x-served-by': 'cache-lax8631-LAX',
+785 verbose headers   'x-cache': 'MISS',
+785 verbose headers   'x-cache-hits': '0',
+785 verbose headers   'x-timer': 'S1481842729.235734,VS0,VE50',
+785 verbose headers   vary: 'Accept-Encoding' }
+786 silly get cb [ 304,
+786 silly get   { date: 'Thu, 15 Dec 2016 22:58:49 GMT',
+786 silly get     via: '1.1 varnish',
+786 silly get     'cache-control': 'max-age=0',
+786 silly get     etag: '"58330935-412c"',
+786 silly get     age: '0',
+786 silly get     connection: 'keep-alive',
+786 silly get     'x-served-by': 'cache-lax8631-LAX',
+786 silly get     'x-cache': 'MISS',
+786 silly get     'x-cache-hits': '0',
+786 silly get     'x-timer': 'S1481842729.235734,VS0,VE50',
+786 silly get     vary: 'Accept-Encoding' } ]
+787 verbose etag https://registry.npmjs.org/@types%2freact-dom from cache
+788 verbose get saving @types/react-dom to /Users/ygoldobin/.npm/registry.npmjs.org/_40types_252freact-dom/.cache.json
+789 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+790 http 200 https://registry.npmjs.org/@types%2freact
+791 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+791 verbose headers   'content-type': 'application/json',
+791 verbose headers   etag: '"584d8dca-98c6"',
+791 verbose headers   'content-encoding': 'gzip',
+791 verbose headers   'cache-control': 'max-age=0',
+791 verbose headers   'transfer-encoding': 'chunked',
+791 verbose headers   'accept-ranges': 'bytes',
+791 verbose headers   date: 'Thu, 15 Dec 2016 22:58:49 GMT',
+791 verbose headers   via: '1.1 varnish',
+791 verbose headers   age: '0',
+791 verbose headers   connection: 'keep-alive',
+791 verbose headers   'x-served-by': 'cache-lax8629-LAX',
+791 verbose headers   'x-cache': 'MISS',
+791 verbose headers   'x-cache-hits': '0',
+791 verbose headers   'x-timer': 'S1481842729.225217,VS0,VE56',
+791 verbose headers   vary: 'Accept-Encoding' }
+792 silly get cb [ 200,
+792 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+792 silly get     'content-type': 'application/json',
+792 silly get     etag: '"584d8dca-98c6"',
+792 silly get     'content-encoding': 'gzip',
+792 silly get     'cache-control': 'max-age=0',
+792 silly get     'transfer-encoding': 'chunked',
+792 silly get     'accept-ranges': 'bytes',
+792 silly get     date: 'Thu, 15 Dec 2016 22:58:49 GMT',
+792 silly get     via: '1.1 varnish',
+792 silly get     age: '0',
+792 silly get     connection: 'keep-alive',
+792 silly get     'x-served-by': 'cache-lax8629-LAX',
+792 silly get     'x-cache': 'MISS',
+792 silly get     'x-cache-hits': '0',
+792 silly get     'x-timer': 'S1481842729.225217,VS0,VE56',
+792 silly get     vary: 'Accept-Encoding' } ]
+793 verbose get saving @types/react to /Users/ygoldobin/.npm/registry.npmjs.org/_40types_252freact/.cache.json
+794 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+795 silly addNameTag next cb for @types/react with tag latest
+796 silly addNamed @types/react@0.14.55
+797 verbose addNamed "0.14.55" is a plain semver version for @types/react
+798 silly addNameTag next cb for @types/react-dom with tag latest
+799 silly addNamed @types/react-dom@0.14.19
+800 verbose addNamed "0.14.19" is a plain semver version for @types/react-dom
+801 silly mapToRegistry name @types/react
+802 silly mapToRegistry scope (from package name) @types
+803 verbose mapToRegistry no registry URL found in name for scope @types
+804 silly mapToRegistry using default registry
+805 silly mapToRegistry registry https://registry.npmjs.org/
+806 silly mapToRegistry data Result {
+806 silly mapToRegistry   raw: '@types/react',
+806 silly mapToRegistry   scope: '@types',
+806 silly mapToRegistry   name: '@types/react',
+806 silly mapToRegistry   rawSpec: '',
+806 silly mapToRegistry   spec: 'latest',
+806 silly mapToRegistry   type: 'tag' }
+807 silly mapToRegistry uri https://registry.npmjs.org/@types%2freact
+808 verbose addRemoteTarball https://registry.npmjs.org/@types/react/-/react-0.14.55.tgz not in flight; adding
+809 verbose addRemoteTarball [ 'https://registry.npmjs.org/@types/react/-/react-0.14.55.tgz',
+809 verbose addRemoteTarball   'f7f7a6ad0c94780531e95632435b2798c5dad11b' ]
+810 silly cache afterAdd @types/react-dom@0.14.19
+811 verbose afterAdd /Users/ygoldobin/.npm/@types/react-dom/0.14.19/package/package.json not in flight; writing
+812 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+813 info retry fetch attempt 1 at 2:58:49 PM
+814 info attempt registry request try #1 at 2:58:49 PM
+815 http fetch GET https://registry.npmjs.org/@types/react/-/react-0.14.55.tgz
+816 verbose afterAdd /Users/ygoldobin/.npm/@types/react-dom/0.14.19/package/package.json written
+817 http 304 https://registry.npmjs.org/@types%2fpure-render-decorator
+818 verbose headers { date: 'Thu, 15 Dec 2016 22:58:49 GMT',
+818 verbose headers   via: '1.1 varnish',
+818 verbose headers   'cache-control': 'max-age=0',
+818 verbose headers   etag: '"57e0287b-3544"',
+818 verbose headers   age: '0',
+818 verbose headers   connection: 'keep-alive',
+818 verbose headers   'x-served-by': 'cache-lax8635-LAX',
+818 verbose headers   'x-cache': 'MISS',
+818 verbose headers   'x-cache-hits': '0',
+818 verbose headers   'x-timer': 'S1481842729.230953,VS0,VE147',
+818 verbose headers   vary: 'Accept-Encoding' }
+819 silly get cb [ 304,
+819 silly get   { date: 'Thu, 15 Dec 2016 22:58:49 GMT',
+819 silly get     via: '1.1 varnish',
+819 silly get     'cache-control': 'max-age=0',
+819 silly get     etag: '"57e0287b-3544"',
+819 silly get     age: '0',
+819 silly get     connection: 'keep-alive',
+819 silly get     'x-served-by': 'cache-lax8635-LAX',
+819 silly get     'x-cache': 'MISS',
+819 silly get     'x-cache-hits': '0',
+819 silly get     'x-timer': 'S1481842729.230953,VS0,VE147',
+819 silly get     vary: 'Accept-Encoding' } ]
+820 verbose etag https://registry.npmjs.org/@types%2fpure-render-decorator from cache
+821 verbose get saving @types/pure-render-decorator to /Users/ygoldobin/.npm/registry.npmjs.org/_40types_252fpure-render-decorator/.cache.json
+822 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+823 silly addNameTag next cb for @types/pure-render-decorator with tag latest
+824 silly addNamed @types/pure-render-decorator@0.2.27
+825 verbose addNamed "0.2.27" is a plain semver version for @types/pure-render-decorator
+826 silly cache afterAdd @types/pure-render-decorator@0.2.27
+827 verbose afterAdd /Users/ygoldobin/.npm/@types/pure-render-decorator/0.2.27/package/package.json not in flight; writing
+828 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+829 verbose afterAdd /Users/ygoldobin/.npm/@types/pure-render-decorator/0.2.27/package/package.json written
+830 http 304 https://registry.npmjs.org/@types%2freact-addons-css-transition-group
+831 verbose headers { date: 'Thu, 15 Dec 2016 22:58:49 GMT',
+831 verbose headers   via: '1.1 varnish',
+831 verbose headers   'cache-control': 'max-age=0',
+831 verbose headers   etag: '"582a125d-49d9"',
+831 verbose headers   age: '0',
+831 verbose headers   connection: 'keep-alive',
+831 verbose headers   'x-served-by': 'cache-lax8650-LAX',
+831 verbose headers   'x-cache': 'MISS',
+831 verbose headers   'x-cache-hits': '0',
+831 verbose headers   'x-timer': 'S1481842729.230791,VS0,VE178',
+831 verbose headers   vary: 'Accept-Encoding' }
+832 silly get cb [ 304,
+832 silly get   { date: 'Thu, 15 Dec 2016 22:58:49 GMT',
+832 silly get     via: '1.1 varnish',
+832 silly get     'cache-control': 'max-age=0',
+832 silly get     etag: '"582a125d-49d9"',
+832 silly get     age: '0',
+832 silly get     connection: 'keep-alive',
+832 silly get     'x-served-by': 'cache-lax8650-LAX',
+832 silly get     'x-cache': 'MISS',
+832 silly get     'x-cache-hits': '0',
+832 silly get     'x-timer': 'S1481842729.230791,VS0,VE178',
+832 silly get     vary: 'Accept-Encoding' } ]
+833 verbose etag https://registry.npmjs.org/@types%2freact-addons-css-transition-group from cache
+834 verbose get saving @types/react-addons-css-transition-group to /Users/ygoldobin/.npm/registry.npmjs.org/_40types_252freact-addons-css-transition-group/.cache.json
+835 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+836 silly addNameTag next cb for @types/react-addons-css-transition-group with tag latest
+837 silly addNamed @types/react-addons-css-transition-group@0.14.18
+838 verbose addNamed "0.14.18" is a plain semver version for @types/react-addons-css-transition-group
+839 silly cache afterAdd @types/react-addons-css-transition-group@0.14.18
+840 verbose afterAdd /Users/ygoldobin/.npm/@types/react-addons-css-transition-group/0.14.18/package/package.json not in flight; writing
+841 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+842 verbose afterAdd /Users/ygoldobin/.npm/@types/react-addons-css-transition-group/0.14.18/package/package.json written
+843 http 304 https://registry.npmjs.org/@types%2fdom4
+844 verbose headers { date: 'Thu, 15 Dec 2016 22:58:49 GMT',
+844 verbose headers   via: '1.1 varnish',
+844 verbose headers   'cache-control': 'max-age=0',
+844 verbose headers   etag: '"57e02074-327e"',
+844 verbose headers   age: '0',
+844 verbose headers   connection: 'keep-alive',
+844 verbose headers   'x-served-by': 'cache-lax8644-LAX',
+844 verbose headers   'x-cache': 'MISS',
+844 verbose headers   'x-cache-hits': '0',
+844 verbose headers   'x-timer': 'S1481842729.241098,VS0,VE193',
+844 verbose headers   vary: 'Accept-Encoding' }
+845 silly get cb [ 304,
+845 silly get   { date: 'Thu, 15 Dec 2016 22:58:49 GMT',
+845 silly get     via: '1.1 varnish',
+845 silly get     'cache-control': 'max-age=0',
+845 silly get     etag: '"57e02074-327e"',
+845 silly get     age: '0',
+845 silly get     connection: 'keep-alive',
+845 silly get     'x-served-by': 'cache-lax8644-LAX',
+845 silly get     'x-cache': 'MISS',
+845 silly get     'x-cache-hits': '0',
+845 silly get     'x-timer': 'S1481842729.241098,VS0,VE193',
+845 silly get     vary: 'Accept-Encoding' } ]
+846 verbose etag https://registry.npmjs.org/@types%2fdom4 from cache
+847 verbose get saving @types/dom4 to /Users/ygoldobin/.npm/registry.npmjs.org/_40types_252fdom4/.cache.json
+848 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+849 silly addNameTag next cb for @types/dom4 with tag latest
+850 silly addNamed @types/dom4@1.5.20
+851 verbose addNamed "1.5.20" is a plain semver version for @types/dom4
+852 silly cache afterAdd @types/dom4@1.5.20
+853 verbose afterAdd /Users/ygoldobin/.npm/@types/dom4/1.5.20/package/package.json not in flight; writing
+854 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+855 verbose afterAdd /Users/ygoldobin/.npm/@types/dom4/1.5.20/package/package.json written
+856 http fetch 200 https://registry.npmjs.org/@types/react/-/react-0.14.55.tgz
+857 silly fetchAndShaCheck shasum f7f7a6ad0c94780531e95632435b2798c5dad11b
+858 verbose addTmpTarball /var/folders/v6/jh24ddjx5xqfr40z1m7cld0r0000gn/T/npm-58701-b7cb4d6e/registry.npmjs.org/_40types/react/-/react-0.14.55.tgz not in flight; adding
+859 verbose addTmpTarball already have metadata; skipping unpack for @types/react@0.14.55
+860 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+861 silly cache afterAdd @types/react@0.14.55
+862 verbose afterAdd /Users/ygoldobin/.npm/@types/react/0.14.55/package/package.json not in flight; writing
+863 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+864 verbose afterAdd /Users/ygoldobin/.npm/@types/react/0.14.55/package/package.json written
+865 silly install resolved [ { name: '@types/react-dom',
+865 silly install resolved     version: '0.14.19',
+865 silly install resolved     description: 'TypeScript definitions for React v0.14 (react-dom)',
+865 silly install resolved     license: 'MIT',
+865 silly install resolved     author: { name: 'Asana', email: 'https://asana.com' },
+865 silly install resolved     main: '',
+865 silly install resolved     repository:
+865 silly install resolved      { type: 'git',
+865 silly install resolved        url: 'https://www.github.com/DefinitelyTyped/DefinitelyTyped.git' },
+865 silly install resolved     scripts: {},
+865 silly install resolved     dependencies: { '@types/react': '*' },
+865 silly install resolved     peerDependencies: {},
+865 silly install resolved     typings: 'index.d.ts',
+865 silly install resolved     typesPublisherContentHash: '0706272ecdebbc18fcb2c46153747a4d6a00c9bf5ef75e1aa6edd09ae4281d91',
+865 silly install resolved     _id: '@types/react-dom@0.14.19',
+865 silly install resolved     dist:
+865 silly install resolved      { shasum: '698a14335e32fb1bc61db65f5647c9668a7fc2eb',
+865 silly install resolved        tarball: 'https://registry.npmjs.org/@types/react-dom/-/react-dom-0.14.19.tgz' },
+865 silly install resolved     maintainers: [ [Object] ],
+865 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+865 silly install resolved     _npmOperationalInternal:
+865 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+865 silly install resolved        tmp: 'tmp/react-dom-0.14.19.tgz_1479739699404_0.031492527574300766' },
+865 silly install resolved     directories: {},
+865 silly install resolved     _shasum: '698a14335e32fb1bc61db65f5647c9668a7fc2eb',
+865 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/react-dom/-/react-dom-0.14.19.tgz',
+865 silly install resolved     _from: '@types/react-dom@latest',
+865 silly install resolved     readme: 'ERROR: No README data found!' },
+865 silly install resolved   { name: '@types/pure-render-decorator',
+865 silly install resolved     version: '0.2.27',
+865 silly install resolved     description: 'TypeScript definitions for pure-render-decorator v0.2.0',
+865 silly install resolved     license: 'MIT',
+865 silly install resolved     author:
+865 silly install resolved      { name: 'Sean Kelley',
+865 silly install resolved        email: 'https://github.com/seansfkelley/' },
+865 silly install resolved     main: '',
+865 silly install resolved     repository:
+865 silly install resolved      { type: 'git',
+865 silly install resolved        url: 'https://www.github.com/DefinitelyTyped/DefinitelyTyped.git' },
+865 silly install resolved     scripts: {},
+865 silly install resolved     dependencies: {},
+865 silly install resolved     typings: 'index.d.ts',
+865 silly install resolved     typesPublisherContentHash: 'b9f2bd135a09ab5941247ea847306f59cd29372c78ab8d750fd3eb0329c4c1f2',
+865 silly install resolved     _id: '@types/pure-render-decorator@0.2.27',
+865 silly install resolved     dist:
+865 silly install resolved      { shasum: 'f819234b6935ec125e9d7e2aa91f35a4b7221883',
+865 silly install resolved        tarball: 'https://registry.npmjs.org/@types/pure-render-decorator/-/pure-render-decorator-0.2.27.tgz' },
+865 silly install resolved     maintainers: [ [Object] ],
+865 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+865 silly install resolved     _npmOperationalInternal:
+865 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+865 silly install resolved        tmp: 'tmp/pure-render-decorator-0.2.27.tgz_1474308219692_0.06123673799447715' },
+865 silly install resolved     directories: {},
+865 silly install resolved     _shasum: 'f819234b6935ec125e9d7e2aa91f35a4b7221883',
+865 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/pure-render-decorator/-/pure-render-decorator-0.2.27.tgz',
+865 silly install resolved     _from: '@types/pure-render-decorator@latest',
+865 silly install resolved     readme: 'ERROR: No README data found!' },
+865 silly install resolved   { name: '@types/react-addons-css-transition-group',
+865 silly install resolved     version: '0.14.18',
+865 silly install resolved     description: 'TypeScript definitions for React v0.14 (react-addons-css-transition-group)',
+865 silly install resolved     license: 'MIT',
+865 silly install resolved     author: { name: 'Asana', email: 'https://asana.com' },
+865 silly install resolved     main: '',
+865 silly install resolved     repository:
+865 silly install resolved      { type: 'git',
+865 silly install resolved        url: 'https://www.github.com/DefinitelyTyped/DefinitelyTyped.git' },
+865 silly install resolved     scripts: {},
+865 silly install resolved     dependencies:
+865 silly install resolved      { '@types/react': '*',
+865 silly install resolved        '@types/react-addons-transition-group': '*' },
+865 silly install resolved     peerDependencies: {},
+865 silly install resolved     typings: 'index.d.ts',
+865 silly install resolved     typesPublisherContentHash: 'c25950c32400ef5c7df3992e699473a38db41052851caaf9b9e177753b35f00c',
+865 silly install resolved     _id: '@types/react-addons-css-transition-group@0.14.18',
+865 silly install resolved     dist:
+865 silly install resolved      { shasum: '8fbe91860503f23dba77b7bdf25442707b445526',
+865 silly install resolved        tarball: 'https://registry.npmjs.org/@types/react-addons-css-transition-group/-/react-addons-css-transition-group-0.14.18.tgz' },
+865 silly install resolved     maintainers: [ [Object] ],
+865 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+865 silly install resolved     _npmOperationalInternal:
+865 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+865 silly install resolved        tmp: 'tmp/react-addons-css-transition-group-0.14.18.tgz_1479152219774_0.6676557408645749' },
+865 silly install resolved     directories: {},
+865 silly install resolved     _shasum: '8fbe91860503f23dba77b7bdf25442707b445526',
+865 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/react-addons-css-transition-group/-/react-addons-css-transition-group-0.14.18.tgz',
+865 silly install resolved     _from: '@types/react-addons-css-transition-group@latest',
+865 silly install resolved     readme: 'ERROR: No README data found!' },
+865 silly install resolved   { name: '@types/dom4',
+865 silly install resolved     version: '1.5.20',
+865 silly install resolved     description: 'TypeScript definitions for dom4 v1.5',
+865 silly install resolved     license: 'MIT',
+865 silly install resolved     author: { name: 'Adi Dahiya', email: 'https://github.com/adidahiya' },
+865 silly install resolved     main: '',
+865 silly install resolved     repository:
+865 silly install resolved      { type: 'git',
+865 silly install resolved        url: 'https://www.github.com/DefinitelyTyped/DefinitelyTyped.git' },
+865 silly install resolved     scripts: {},
+865 silly install resolved     dependencies: {},
+865 silly install resolved     typings: 'index.d.ts',
+865 silly install resolved     typesPublisherContentHash: '13797d7696fa591727dbb8364372fad169821a928bc405f31e1e4688e3d35d9b',
+865 silly install resolved     _id: '@types/dom4@1.5.20',
+865 silly install resolved     dist:
+865 silly install resolved      { shasum: 'ccf636d3b794fe65a4191ebc7ff979a78efea6c2',
+865 silly install resolved        tarball: 'https://registry.npmjs.org/@types/dom4/-/dom4-1.5.20.tgz' },
+865 silly install resolved     maintainers: [ [Object] ],
+865 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+865 silly install resolved     _npmOperationalInternal:
+865 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+865 silly install resolved        tmp: 'tmp/dom4-1.5.20.tgz_1474306164676_0.009460253408178687' },
+865 silly install resolved     directories: {},
+865 silly install resolved     _shasum: 'ccf636d3b794fe65a4191ebc7ff979a78efea6c2',
+865 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/dom4/-/dom4-1.5.20.tgz',
+865 silly install resolved     _from: '@types/dom4@latest',
+865 silly install resolved     readme: 'ERROR: No README data found!' },
+865 silly install resolved   { name: '@types/react',
+865 silly install resolved     version: '0.14.55',
+865 silly install resolved     description: 'TypeScript definitions for React',
+865 silly install resolved     license: 'MIT',
+865 silly install resolved     author: 'Asana <https://asana.com>, AssureSign <http://www.assuresign.com>, Microsoft <https://microsoft.com>, John Reilly <https://github.com/johnnyreilly/>',
+865 silly install resolved     main: '',
+865 silly install resolved     repository:
+865 silly install resolved      { type: 'git',
+865 silly install resolved        url: 'https://www.github.com/DefinitelyTyped/DefinitelyTyped.git' },
+865 silly install resolved     scripts: {},
+865 silly install resolved     dependencies: {},
+865 silly install resolved     peerDependencies: {},
+865 silly install resolved     typesPublisherContentHash: '46c152cc047128c554b40aac3faefb7dac4b6c53dc128f92db3dbcb13e1fa115',
+865 silly install resolved     _id: '@types/react@0.14.55',
+865 silly install resolved     dist:
+865 silly install resolved      { shasum: 'f7f7a6ad0c94780531e95632435b2798c5dad11b',
+865 silly install resolved        tarball: 'https://registry.npmjs.org/@types/react/-/react-0.14.55.tgz' },
+865 silly install resolved     maintainers: [ [Object] ],
+865 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+865 silly install resolved     _npmOperationalInternal:
+865 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+865 silly install resolved        tmp: 'tmp/react-0.14.55.tgz_1481477578003_0.9206908845808357' },
+865 silly install resolved     directories: {},
+865 silly install resolved     _shasum: 'f7f7a6ad0c94780531e95632435b2798c5dad11b',
+865 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/react/-/react-0.14.55.tgz',
+865 silly install resolved     _from: '@types/react@latest' } ]
+866 info install @types/react-dom@0.14.19 into /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
+867 info install @types/pure-render-decorator@0.2.27 into /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
+868 info install @types/react-addons-css-transition-group@0.14.18 into /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
+869 info install @types/dom4@1.5.20 into /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
+870 info install @types/react@0.14.55 into /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
+871 info installOne @types/react-dom@0.14.19
+872 verbose installOne of @types/react-dom to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude not in flight; installing
+873 verbose correctMkdir /Users/ygoldobin/.npm/_locks correctMkdir not in flight; initializing
+874 info installOne @types/pure-render-decorator@0.2.27
+875 verbose installOne of @types/pure-render-decorator to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude not in flight; installing
+876 verbose correctMkdir /Users/ygoldobin/.npm/_locks correctMkdir already in flight; waiting
+877 info installOne @types/react-addons-css-transition-group@0.14.18
+878 verbose installOne of @types/react-addons-css-transition-group to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude not in flight; installing
+879 verbose correctMkdir /Users/ygoldobin/.npm/_locks correctMkdir already in flight; waiting
+880 info installOne @types/dom4@1.5.20
+881 verbose installOne of @types/dom4 to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude not in flight; installing
+882 verbose correctMkdir /Users/ygoldobin/.npm/_locks correctMkdir already in flight; waiting
+883 info installOne @types/react@0.14.55
+884 verbose installOne of @types/react to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude not in flight; installing
+885 verbose correctMkdir /Users/ygoldobin/.npm/_locks correctMkdir already in flight; waiting
+886 verbose lock using /Users/ygoldobin/.npm/_locks/types-pure-render-decora-617126e3a3d3e2f3.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator
+887 verbose lock using /Users/ygoldobin/.npm/_locks/types-react-dom-73cf7c7c682e15f5.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom
+888 verbose lock using /Users/ygoldobin/.npm/_locks/types-react-addons-css-t-78ee5b2553b56e8b.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group
+889 silly install write writing @types/pure-render-decorator 0.2.27 to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator
+890 silly install write writing @types/react-dom 0.14.19 to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom
+891 silly install write writing @types/react-addons-css-transition-group 0.14.18 to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group
+892 verbose lock using /Users/ygoldobin/.npm/_locks/types-dom4-6ae398dcf93c555d.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4
+893 verbose lock using /Users/ygoldobin/.npm/_locks/types-react-dcec8c9c09666c6d.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react
+894 silly install write writing @types/dom4 1.5.20 to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4
+895 silly install write writing @types/react 0.14.55 to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react
+896 verbose unbuild node_modules/@types/pure-render-decorator
+897 verbose unbuild node_modules/@types/react-dom
+898 verbose unbuild node_modules/@types/react-addons-css-transition-group
+899 verbose unbuild node_modules/@types/dom4
+900 verbose unbuild node_modules/@types/react
+901 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator is being purged from base /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
+902 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator
+903 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom is being purged from base /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
+904 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom
+905 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group is being purged from base /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
+906 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group
+907 verbose tar unpack /Users/ygoldobin/.npm/@types/pure-render-decorator/0.2.27/package.tgz
+908 verbose tar unpacking to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator
+909 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator is being purged
+910 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator
+911 verbose tar unpack /Users/ygoldobin/.npm/@types/react-dom/0.14.19/package.tgz
+912 verbose tar unpacking to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom
+913 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom is being purged
+914 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom
+915 verbose tar unpack /Users/ygoldobin/.npm/@types/react-addons-css-transition-group/0.14.18/package.tgz
+916 verbose tar unpacking to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group
+917 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group is being purged
+918 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group
+919 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4 is being purged from base /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
+920 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4
+921 silly gunzTarPerm modes [ '755', '644' ]
+922 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react is being purged from base /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
+923 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react
+924 silly gunzTarPerm modes [ '755', '644' ]
+925 silly gunzTarPerm modes [ '755', '644' ]
+926 verbose tar unpack /Users/ygoldobin/.npm/@types/dom4/1.5.20/package.tgz
+927 verbose tar unpacking to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4
+928 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4 is being purged
+929 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4
+930 verbose tar unpack /Users/ygoldobin/.npm/@types/react/0.14.55/package.tgz
+931 verbose tar unpacking to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react
+932 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react is being purged
+933 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react
+934 silly gunzTarPerm modes [ '755', '644' ]
+935 silly gunzTarPerm modes [ '755', '644' ]
+936 silly gunzTarPerm extractEntry README.md
+937 silly gunzTarPerm extractEntry README.md
+938 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+939 silly gunzTarPerm extractEntry README.md
+940 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+941 silly gunzTarPerm extractEntry README.md
+942 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+943 silly gunzTarPerm extractEntry README.md
+944 silly gunzTarPerm extractEntry index.d.ts
+945 silly gunzTarPerm extractEntry package.json
+946 silly gunzTarPerm extractEntry index.d.ts
+947 silly gunzTarPerm modified mode [ 'index.d.ts', 438, 420 ]
+948 silly gunzTarPerm extractEntry package.json
+949 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+950 silly gunzTarPerm extractEntry index.d.ts
+951 silly gunzTarPerm modified mode [ 'index.d.ts', 438, 420 ]
+952 silly gunzTarPerm extractEntry package.json
+953 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+954 silly gunzTarPerm extractEntry index.d.ts
+955 silly gunzTarPerm modified mode [ 'index.d.ts', 438, 420 ]
+956 silly gunzTarPerm extractEntry package.json
+957 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+958 silly gunzTarPerm extractEntry index.d.ts
+959 silly gunzTarPerm extractEntry package.json
+960 silly gunzTarPerm extractEntry types-metadata.json
+961 silly gunzTarPerm extractEntry server.d.ts
+962 silly gunzTarPerm modified mode [ 'server.d.ts', 438, 420 ]
+963 silly gunzTarPerm extractEntry types-metadata.json
+964 silly gunzTarPerm modified mode [ 'types-metadata.json', 438, 420 ]
+965 silly gunzTarPerm extractEntry types-metadata.json
+966 silly gunzTarPerm modified mode [ 'types-metadata.json', 438, 420 ]
+967 silly gunzTarPerm extractEntry types-metadata.json
+968 silly gunzTarPerm modified mode [ 'types-metadata.json', 438, 420 ]
+969 silly gunzTarPerm extractEntry types-metadata.json
+970 verbose write writing to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator/package.json
+971 verbose write writing to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/package.json
+972 verbose write writing to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4/package.json
+973 info preinstall @types/pure-render-decorator@0.2.27
+974 info preinstall @types/react-addons-css-transition-group@0.14.18
+975 info preinstall @types/dom4@1.5.20
+976 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator/package.json
+977 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/package.json
+978 verbose write writing to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom/package.json
+979 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4/package.json
+980 verbose write writing to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react/package.json
+981 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator/package.json
+982 silly prepareForInstallMany adding @types/react-addons-transition-group@* from @types/react-addons-css-transition-group dependencies
+983 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/package.json
+984 info preinstall @types/react-dom@0.14.19
+985 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4/package.json
+986 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom/package.json
+987 info preinstall @types/react@0.14.55
+988 silly install resolved []
+989 verbose about to build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator
+990 info build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator
+991 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react/package.json
+992 silly install resolved []
+993 verbose about to build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4
+994 info build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4
+995 silly cache add args [ '@types/react-addons-transition-group@*', null ]
+996 verbose cache add spec @types/react-addons-transition-group@*
+997 silly cache add parsed spec Result {
+997 silly cache add   raw: '@types/react-addons-transition-group@*',
+997 silly cache add   scope: '@types',
+997 silly cache add   name: '@types/react-addons-transition-group',
+997 silly cache add   rawSpec: '*',
+997 silly cache add   spec: '*',
+997 silly cache add   type: 'range' }
+998 silly addNamed @types/react-addons-transition-group@*
+999 verbose addNamed "*" is a valid semver range for @types/react-addons-transition-group
+1000 silly addNameRange { name: '@types/react-addons-transition-group',
+1000 silly addNameRange   range: '*',
+1000 silly addNameRange   hasData: false }
+1001 silly mapToRegistry name @types/react-addons-transition-group
+1002 silly mapToRegistry scope (from package name) @types
+1003 verbose mapToRegistry no registry URL found in name for scope @types
+1004 silly mapToRegistry using default registry
+1005 silly mapToRegistry registry https://registry.npmjs.org/
+1006 silly mapToRegistry data Result {
+1006 silly mapToRegistry   raw: '@types/react-addons-transition-group',
+1006 silly mapToRegistry   scope: '@types',
+1006 silly mapToRegistry   name: '@types/react-addons-transition-group',
+1006 silly mapToRegistry   rawSpec: '',
+1006 silly mapToRegistry   spec: 'latest',
+1006 silly mapToRegistry   type: 'tag' }
+1007 silly mapToRegistry uri https://registry.npmjs.org/@types%2freact-addons-transition-group
+1008 verbose addNameRange registry:https://registry.npmjs.org/@types%2freact-addons-transition-group not in flight; fetching
+1009 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom/package.json
+1010 info linkStuff @types/pure-render-decorator@0.2.27
+1011 silly linkStuff @types/pure-render-decorator@0.2.27 has /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules as its parent node_modules
+1012 info linkStuff @types/dom4@1.5.20
+1013 silly linkStuff @types/dom4@1.5.20 has /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules as its parent node_modules
+1014 verbose request uri https://registry.npmjs.org/@types%2freact-addons-transition-group
+1015 verbose request no auth needed
+1016 info attempt registry request try #1 at 2:58:49 PM
+1017 verbose etag "57e0292b-40f6"
+1018 http request GET https://registry.npmjs.org/@types%2freact-addons-transition-group
+1019 silly install resolved []
+1020 verbose about to build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom
+1021 info build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom
+1022 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react/package.json
+1023 info linkStuff @types/react-dom@0.14.19
+1024 silly linkStuff @types/react-dom@0.14.19 has /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules as its parent node_modules
+1025 verbose linkBins @types/pure-render-decorator@0.2.27
+1026 verbose linkMans @types/pure-render-decorator@0.2.27
+1027 verbose rebuildBundles @types/pure-render-decorator@0.2.27
+1028 verbose linkBins @types/dom4@1.5.20
+1029 verbose linkMans @types/dom4@1.5.20
+1030 verbose rebuildBundles @types/dom4@1.5.20
+1031 info install @types/pure-render-decorator@0.2.27
+1032 info install @types/dom4@1.5.20
+1033 info postinstall @types/pure-render-decorator@0.2.27
+1034 info postinstall @types/dom4@1.5.20
+1035 silly install resolved []
+1036 verbose about to build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react
+1037 info build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react
+1038 verbose unlock done using /Users/ygoldobin/.npm/_locks/types-pure-render-decora-617126e3a3d3e2f3.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/pure-render-decorator
+1039 verbose unlock done using /Users/ygoldobin/.npm/_locks/types-dom4-6ae398dcf93c555d.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/dom4
+1040 verbose linkBins @types/react-dom@0.14.19
+1041 verbose linkMans @types/react-dom@0.14.19
+1042 verbose rebuildBundles @types/react-dom@0.14.19
+1043 info install @types/react-dom@0.14.19
+1044 info postinstall @types/react-dom@0.14.19
+1045 info linkStuff @types/react@0.14.55
+1046 silly linkStuff @types/react@0.14.55 has /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules as its parent node_modules
+1047 verbose unlock done using /Users/ygoldobin/.npm/_locks/types-react-dom-73cf7c7c682e15f5.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-dom
+1048 verbose linkBins @types/react@0.14.55
+1049 verbose linkMans @types/react@0.14.55
+1050 verbose rebuildBundles @types/react@0.14.55
+1051 info install @types/react@0.14.55
+1052 info postinstall @types/react@0.14.55
+1053 verbose unlock done using /Users/ygoldobin/.npm/_locks/types-react-dcec8c9c09666c6d.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react
+1054 http 304 https://registry.npmjs.org/@types%2freact-addons-transition-group
+1055 verbose headers { date: 'Thu, 15 Dec 2016 22:58:49 GMT',
+1055 verbose headers   via: '1.1 varnish',
+1055 verbose headers   'cache-control': 'max-age=0',
+1055 verbose headers   etag: '"57e0292b-40f6"',
+1055 verbose headers   age: '0',
+1055 verbose headers   connection: 'keep-alive',
+1055 verbose headers   'x-served-by': 'cache-lax8631-LAX',
+1055 verbose headers   'x-cache': 'MISS',
+1055 verbose headers   'x-cache-hits': '0',
+1055 verbose headers   'x-timer': 'S1481842729.719710,VS0,VE192',
+1055 verbose headers   vary: 'Accept-Encoding' }
+1056 silly get cb [ 304,
+1056 silly get   { date: 'Thu, 15 Dec 2016 22:58:49 GMT',
+1056 silly get     via: '1.1 varnish',
+1056 silly get     'cache-control': 'max-age=0',
+1056 silly get     etag: '"57e0292b-40f6"',
+1056 silly get     age: '0',
+1056 silly get     connection: 'keep-alive',
+1056 silly get     'x-served-by': 'cache-lax8631-LAX',
+1056 silly get     'x-cache': 'MISS',
+1056 silly get     'x-cache-hits': '0',
+1056 silly get     'x-timer': 'S1481842729.719710,VS0,VE192',
+1056 silly get     vary: 'Accept-Encoding' } ]
+1057 verbose etag https://registry.npmjs.org/@types%2freact-addons-transition-group from cache
+1058 verbose get saving @types/react-addons-transition-group to /Users/ygoldobin/.npm/registry.npmjs.org/_40types_252freact-addons-transition-group/.cache.json
+1059 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+1060 silly addNameRange number 2 { name: '@types/react-addons-transition-group',
+1060 silly addNameRange   range: '*',
+1060 silly addNameRange   hasData: true }
+1061 silly addNameRange versions [ '@types/react-addons-transition-group',
+1061 silly addNameRange   [ '0.14.1-alpha',
+1061 silly addNameRange     '0.14.2-alpha',
+1061 silly addNameRange     '0.14.7-alpha',
+1061 silly addNameRange     '0.14.8-alpha',
+1061 silly addNameRange     '0.14.9-alpha',
+1061 silly addNameRange     '0.14.10-alpha',
+1061 silly addNameRange     '0.14.11-alpha',
+1061 silly addNameRange     '0.14.12-alpha',
+1061 silly addNameRange     '0.14.13',
+1061 silly addNameRange     '0.14.14',
+1061 silly addNameRange     '0.14.15',
+1061 silly addNameRange     '0.14.16',
+1061 silly addNameRange     '0.14.17' ] ]
+1062 silly addNamed @types/react-addons-transition-group@0.14.17
+1063 verbose addNamed "0.14.17" is a plain semver version for @types/react-addons-transition-group
+1064 silly cache afterAdd @types/react-addons-transition-group@0.14.17
+1065 verbose afterAdd /Users/ygoldobin/.npm/@types/react-addons-transition-group/0.14.17/package/package.json not in flight; writing
+1066 verbose correctMkdir /Users/ygoldobin/.npm correctMkdir not in flight; initializing
+1067 verbose afterAdd /Users/ygoldobin/.npm/@types/react-addons-transition-group/0.14.17/package/package.json written
+1068 silly install resolved [ { name: '@types/react-addons-transition-group',
+1068 silly install resolved     version: '0.14.17',
+1068 silly install resolved     description: 'TypeScript definitions for React v0.14 (react-addons-transition-group)',
+1068 silly install resolved     license: 'MIT',
+1068 silly install resolved     author: { name: 'Asana', email: 'https://asana.com' },
+1068 silly install resolved     main: '',
+1068 silly install resolved     repository:
+1068 silly install resolved      { type: 'git',
+1068 silly install resolved        url: 'https://www.github.com/DefinitelyTyped/DefinitelyTyped.git' },
+1068 silly install resolved     scripts: {},
+1068 silly install resolved     dependencies: { '@types/react': '*' },
+1068 silly install resolved     typings: 'index.d.ts',
+1068 silly install resolved     typesPublisherContentHash: '1fbe9775e7b07668810d97f90f181c1209edafe398fa7ff49f2d99df583436f5',
+1068 silly install resolved     _id: '@types/react-addons-transition-group@0.14.17',
+1068 silly install resolved     dist:
+1068 silly install resolved      { shasum: '78b3980b7dc80e4dc442db79b3e58f4295d8f870',
+1068 silly install resolved        tarball: 'https://registry.npmjs.org/@types/react-addons-transition-group/-/react-addons-transition-group-0.14.17.tgz' },
+1068 silly install resolved     maintainers: [ [Object] ],
+1068 silly install resolved     _npmUser: { name: 'types', email: 'ts-npm-types@microsoft.com' },
+1068 silly install resolved     _npmOperationalInternal:
+1068 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+1068 silly install resolved        tmp: 'tmp/react-addons-transition-group-0.14.17.tgz_1474308392873_0.5268354672007263' },
+1068 silly install resolved     directories: {},
+1068 silly install resolved     _shasum: '78b3980b7dc80e4dc442db79b3e58f4295d8f870',
+1068 silly install resolved     _resolved: 'https://registry.npmjs.org/@types/react-addons-transition-group/-/react-addons-transition-group-0.14.17.tgz',
+1068 silly install resolved     _from: '@types/react-addons-transition-group@*',
+1068 silly install resolved     readme: 'ERROR: No README data found!' } ]
+1069 info install @types/react-addons-transition-group@0.14.17 into /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group
+1070 info installOne @types/react-addons-transition-group@0.14.17
+1071 verbose installOne of @types/react-addons-transition-group to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group not in flight; installing
+1072 verbose correctMkdir /Users/ygoldobin/.npm/_locks correctMkdir not in flight; initializing
+1073 verbose lock using /Users/ygoldobin/.npm/_locks/types-react-addons-trans-8df5778d274e4e4f.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group
+1074 silly install write writing @types/react-addons-transition-group 0.14.17 to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group
+1075 verbose unbuild node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group
+1076 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group is being purged from base /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
+1077 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group
+1078 verbose tar unpack /Users/ygoldobin/.npm/@types/react-addons-transition-group/0.14.17/package.tgz
+1079 verbose tar unpacking to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group
+1080 silly gentlyRm /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group is being purged
+1081 verbose gentlyRm don't care about contents; nuking /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group
+1082 silly gunzTarPerm modes [ '755', '644' ]
+1083 silly gunzTarPerm extractEntry README.md
+1084 silly gunzTarPerm extractEntry index.d.ts
+1085 silly gunzTarPerm extractEntry package.json
+1086 silly gunzTarPerm extractEntry types-metadata.json
+1087 verbose write writing to /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group/package.json
+1088 info preinstall @types/react-addons-transition-group@0.14.17
+1089 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group/package.json
+1090 verbose readDependencies loading dependencies from /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group/package.json
+1091 silly install resolved []
+1092 verbose about to build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group
+1093 info build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group
+1094 info linkStuff @types/react-addons-transition-group@0.14.17
+1095 silly linkStuff @types/react-addons-transition-group@0.14.17 has /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules as its parent node_modules
+1096 verbose linkBins @types/react-addons-transition-group@0.14.17
+1097 verbose linkMans @types/react-addons-transition-group@0.14.17
+1098 verbose rebuildBundles @types/react-addons-transition-group@0.14.17
+1099 info install @types/react-addons-transition-group@0.14.17
+1100 info postinstall @types/react-addons-transition-group@0.14.17
+1101 verbose unlock done using /Users/ygoldobin/.npm/_locks/types-react-addons-trans-8df5778d274e4e4f.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group/node_modules/@types/react-addons-transition-group
+1102 verbose about to build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group
+1103 info build /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group
+1104 info linkStuff @types/react-addons-css-transition-group@0.14.18
+1105 silly linkStuff @types/react-addons-css-transition-group@0.14.18 has /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules as its parent node_modules
+1106 verbose linkBins @types/react-addons-css-transition-group@0.14.18
+1107 verbose linkMans @types/react-addons-css-transition-group@0.14.18
+1108 verbose rebuildBundles @types/react-addons-css-transition-group@0.14.18
+1109 verbose rebuildBundles [ '@types' ]
+1110 info install @types/react-addons-css-transition-group@0.14.18
+1111 info postinstall @types/react-addons-css-transition-group@0.14.18
+1112 verbose unlock done using /Users/ygoldobin/.npm/_locks/types-react-addons-css-t-78ee5b2553b56e8b.lock for /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/@types/react-addons-css-transition-group
+1113 verbose validateInstall loading /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/package.json for validation
+1114 warn unmet dependency /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/builder-victory-component requires style-loader@'^0.8.0' but will load
+1114 warn unmet dependency /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude/node_modules/style-loader,
+1114 warn unmet dependency which is version 0.13.1
+1115 verbose stack Error: The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
+1115 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/lib/install.js:125:32
+1115 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/lib/install.js:268:7
+1115 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+1115 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1115 verbose stack     at cb (/Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1115 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1115 verbose stack     at cb (/Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1115 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1115 verbose stack     at cb (/Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1115 verbose stack     at /Users/ygoldobin/.nvm/versions/node/v4.6.0/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1116 verbose cwd /Users/ygoldobin/Documents/dev/codesmith/solo-project-emotional-altitude
+1117 error Darwin 16.1.0
+1118 error argv "/Users/ygoldobin/.nvm/versions/node/v4.6.0/bin/node" "/Users/ygoldobin/.nvm/versions/node/v4.6.0/bin/npm" "install" "--save" "@types/dom4" "@types/pure-render-decorator" "@types/react" "@types/react-dom" "@types/react-addons-css-transition-group"
+1119 error node v4.6.0
+1120 error npm  v2.15.9
+1121 error code EPEERINVALID
+1122 error peerinvalid The package react@0.14.8 does not satisfy its siblings' peerDependencies requirements!
+1122 error peerinvalid Peer react-dom@0.14.7 wants react@^0.14.7
+1122 error peerinvalid Peer react-router@2.7.0 wants react@^0.14.0 || ^15.0.0
+1122 error peerinvalid Peer react-addons-css-transition-group@15.4.1 wants react@^15.4.1
+1122 error peerinvalid Peer react-redux@4.4.5 wants react@^0.14.0 || ^15.0.0-0
+1122 error peerinvalid Peer @blueprintjs/core@1.2.0 wants react@^15.0.1 || ^0.14
+1123 verbose exit [ 1, true ]
