@@ -3,11 +3,15 @@ import { Link } from 'react-router';
 import { connect } from 'react-redux'; 
 import store from '../../store.js';
 import * as types from '../../actions/action-types';
+import { OurToaster } from "./toaster.jsx";
 
 class MyNav extends React.Component {
   constructor() {
     super();
     this.logout = this.logout.bind(this);
+    setTimeout(() => {
+       OurToaster.show({ message: "Toasted!" })
+    }, 500)
   }
 
   logout() {
@@ -21,12 +25,12 @@ class MyNav extends React.Component {
   render() {
     let logStateButton = null;
     if (this.props.loggedIn === false) {
-      logStateButton = <button className="pt-button pt-minimal pt-icon-document"><Link to="/login">Login</Link></button>
+      logStateButton = <button id="login-btn" className="pt-button pt-minimal pt-icon-document"><Link to="/login">Login</Link></button>
     } else {
-      logStateButton = <button onClick={this.logout} className="pt-button pt-minimal pt-icon-document"><Link to="/login">Logout</Link></button>
+      logStateButton = <button id="login-btn" onClick={this.logout} className="pt-button pt-minimal pt-icon-document"><Link to="/login">Logout</Link></button>
     }
     return (
-      <div>
+      <div id = "poop">
         <nav className="pt-navbar pt-fixed-top">
           <div className="pt-navbar-group pt-align-left">
             <div className="pt-navbar-heading">Emotional Altitude</div>

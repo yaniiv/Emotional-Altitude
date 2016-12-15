@@ -19,15 +19,19 @@ import {
   Intent,
   Breadcrumb,
   Spinner,
-  DatePickerFactory
+  DatePickerFactory,
+  Toaster,
+  Position
 } from "@blueprintjs/core";
+import { OurToaster } from "./toaster.jsx";
 
 class HomeContainer extends React.Component {
   constructor() {
     super();
-    this.handleCommentSubmit = this
-      .handleCommentSubmit
-      .bind(this);
+    this.handleCommentSubmit = this.handleCommentSubmit
+    setTimeout(() => {
+       OurToaster.show({ message: "Toasted!" })
+    }, 500)
   }
 
   handleCommentSubmit(e) {
@@ -43,7 +47,9 @@ class HomeContainer extends React.Component {
   }
 
   browserPush() {
-    browserHistory.push('/login')
+   
+    // browserHistory.push('/login')
+    // this.IToaster.show()
   }
 
   // postDataToDB(feeling) {   $.ajax({     type: "POST",     url:
@@ -66,4 +72,4 @@ const mapStateToProps = function (store) {
 }
 
 export default connect(mapStateToProps)(HomeContainer)
-        // <MyNav />
+
