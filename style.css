@@ -2,7 +2,8 @@ body {
   background-color: #eeeeff; }
 
 #content {
-  padding-top: 50px; }
+  padding-top: 50px;
+  display: flex; }
 
 .emotion-input {
   min-width: 400px;

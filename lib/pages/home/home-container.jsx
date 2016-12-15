@@ -23,15 +23,12 @@ import {
   Toaster,
   Position
 } from "@blueprintjs/core";
-// import { OurToaster } from "./toaster.jsx";
+import { OurToaster } from "./toaster.jsx";
 
 class HomeContainer extends React.Component {
   constructor() {
     super();
     this.handleCommentSubmit = this.handleCommentSubmit
-    setTimeout(() => {
-       OurToaster.show({ message: "Toasted!" })
-    }, 500)
   }
 
   handleCommentSubmit(e) {
@@ -47,9 +44,7 @@ class HomeContainer extends React.Component {
   }
 
   browserPush() {
-   
-    // browserHistory.push('/login')
-    // this.IToaster.show()
+    OurToaster.show({ message: "Toasted!" })
   }
 
   // postDataToDB(feeling) {   $.ajax({     type: "POST",     url:
@@ -59,9 +54,8 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <div>
-
-        <button onClick={this.browserPush}>browserpush</button>
-        <CommentForm id="commentBox" className="commentBox" onCommentSubmit={this.handleCommentSubmit}/>
+        <button onClick={this.browserPush}>toast</button>
+        <CommentForm className="commentBox" onCommentSubmit={this.handleCommentSubmit}/>
         <Victory className="chart" emotionData={this.props.data}/>
       </div>
     )
@@ -74,7 +68,4 @@ const mapStateToProps = function (store) {
 
 export default connect(mapStateToProps)(HomeContainer)
 
-const OurToaster = Toaster.create({
-    className: "my-toaster",
-    position: Position.BOTTOM,
-}, document.getElementById("commentBox"));
+
