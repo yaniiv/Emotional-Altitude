@@ -9,9 +9,6 @@ class MyNav extends React.Component {
   constructor() {
     super();
     this.logout = this.logout.bind(this);
-    setTimeout(() => {
-       OurToaster.show({ message: "Toasted!" })
-    }, 500)
   }
 
   logout() {
@@ -30,7 +27,7 @@ class MyNav extends React.Component {
       logStateButton = <button id="login-btn" onClick={this.logout} className="pt-button pt-minimal pt-icon-document"><Link to="/login">Logout</Link></button>
     }
     return (
-      <div id = "poop">
+      <div>
         <nav className="pt-navbar pt-fixed-top">
           <div className="pt-navbar-group pt-align-left">
             <div className="pt-navbar-heading">Emotional Altitude</div>
