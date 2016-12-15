@@ -2,7 +2,9 @@ body {
     background-color: #eeeeff;
 }
 
-
+#content{
+    padding-top: $pt-navbar-height;
+}
 .emotion-input {
     min-width: 400px;
     min-height: 40px;

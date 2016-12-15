@@ -27,7 +27,7 @@ class MyNav extends React.Component {
     }
     return (
       <div>
-        <nav className="pt-navbar .modifier">
+        <nav className="pt-navbar pt-fixed-top">
           <div className="pt-navbar-group pt-align-left">
             <div className="pt-navbar-heading">Emotional Altitude</div>
           </div>
