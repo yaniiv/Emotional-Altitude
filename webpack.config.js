@@ -1,6 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-// var css = require("style-loader!css-loader!sass-loader!./style.scss");
 
 module.exports = {
   entry: './lib/index.jsx',
@@ -18,11 +17,3 @@ module.exports = {
     ]
   },
 };
-
-// ,
-//     loaders: [
-//           {
-//               test: /\.scss$/,
-//               loaders: ['style', 'css', 'sass']
-//           }
-//       ]

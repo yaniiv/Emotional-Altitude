@@ -6,7 +6,7 @@ import MyNav from './my-nav.jsx';
 import d3 from 'd3';
 import $ from 'jquery';
 import Victory from './emotion-chart.jsx';
-import CommentForm from './comment-form.jsx';
+import InputBlock from './input-block.jsx';
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
 
 import {connect} from 'react-redux';
@@ -25,27 +25,13 @@ import {
   RangeSlider
 } from "@blueprintjs/core";
 import { OurToaster } from "./toaster.jsx";
-import { MySlider } from "./slider.jsx";
+import MySlider  from "./slider.jsx";
 
 class HomeContainer extends React.Component {
-  constructor() {
-    super();
-    this.state = {sliderValue: 0} 
-  }
 
-  handleCommentSubmit(e) {
-    e.preventDefault();
-    store.dispatch({
-      type: types.ADD_DATA,
-      feelsObj: {
-        feelingNum: e.target.elements[0].valueAsNumber,
-        feelingText: e.target.elements[1].value,
-        feelingDate: new Date()
-      }
-    })
-  }
+  
 
-  browserPush() {
+  browserPush() {i
     OurToaster.show({ message: "Toasted!" })
   }
 
@@ -56,11 +42,9 @@ class HomeContainer extends React.Component {
   render() {
     return (
       <div>
-        <MySlider sValue={this.state.sliderValue}/>
-
         <button onClick={this.browserPush}>toast</button>
         <Victory className="chart" emotionData={this.props.data}/>
-        <CommentForm className="commentBox" onCommentSubmit={this.handleCommentSubmit}/>
+        <InputBlock className="commentBox" />
         </div>
     )
   }
