@@ -34,7 +34,7 @@ export default class Victory extends React.Component {
 				/>
 
 				<VictoryScatter
-					animate={{duration: 2000}}	
+					animate={{duration: 1000}}	
           style={{
           data: {
               fill: "teal",
@@ -47,14 +47,14 @@ export default class Victory extends React.Component {
           }}
           size={2}     
 					data={this.props.emotionData}
-					labels={(data)=>data.feelingText}
+					labels={(data)=>data.feelingTagline}
 					x={"feelingDate"}
 					y={"feelingNum"}
         />  
 
 
 				<VictoryArea
-			  	animate={{duration: 2000}}
+			  	animate={{duration: 1000}}
         	style={{
           data: {
             fill: "teal",

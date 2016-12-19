@@ -31,7 +31,7 @@ class HomeContainer extends React.Component {
 
   
 
-  browserPush() {i
+  browserPush() {
     OurToaster.show({ message: "Toasted!" })
   }
 

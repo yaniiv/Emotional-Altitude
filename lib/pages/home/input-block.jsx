@@ -1,5 +1,10 @@
 import React from 'react';
-import MySlider  from "./slider.jsx";
+// import MySlider  from "./slider.jsx";
+import store from '../../store.js';
+import * as types from '../../actions/action-types.js';
+
+import {connect} from 'react-redux';
+import { Slider } from "@blueprintjs/core";
 
 export default class InputBlock extends React.Component {
   constructor() {
@@ -7,46 +12,49 @@ export default class InputBlock extends React.Component {
     this.taglineStyle = { width: '400px' };
     this.descriptionStyle = { width: '400px', height:'150px' };
     
+    this.handleCommentSubmit = this.handleCommentSubmit.bind(this)
+    this.handleSliderChange = this.handleSliderChange.bind(this)
     this.state = { sliderValue: 0 } 
-    this.handeSliderChange = this.handleSliderChange.bind(this);
-  
-
   }
   
   handleCommentSubmit(e) {
-    // console.log(e.target.elements
-    // )
     e.preventDefault();
-    // store.dispatch({
-    //   type: types.ADD_DATA,
-    //   feelsObj: {
-    //     feelingNum: e.target.elements[0].valueAsNumber,
-    //     feelingText: e.target.elements[1].value,
-    //     feelingDate: new Date()
-    //   }
-    // })
+        console.log("hi")
+        console.log(this.state.sliderValue)
+
+    this.state.sliderValue
+    store.dispatch({
+      type: types.ADD_DATA,
+      feelsObj: {
+        feelingNum: this.state.sliderValue,
+        feelingTagline: e.target.elements[0].value,
+        feelingDescriptiom: e.target.elements[0].value,
+        feelingDate: new Date()
+      }
+    })
   }
 
-  handleSliderChange(){
-    // console.log(newVal)
-    document.getElementByID("Slider")
-    // this.setState({sliderValue: newVal})
+  handleSliderChange(nextVal){
+    this.setState({sliderValue: nextVal})
   }
 
   render () {
     return (
       <div>
         <label className="pt-label .modifier">
-          What Is Your Emotional Altitude?
-          
-          <MySlider sliderValue={this.state.sliderValue} handeSliderChange={this.handleSliderChange} />
-          
+          What Is Your Emotional Altitude?  
+         <Slider
+          id="Slider"
+          min={0}
+          max={100}
+          stepSize={1}
+          labelStepSize={10}
+          value={this.state.sliderValue}
+          onChange={(value)=>{this.handleSliderChange(value)}}
+          />          
         </label>
 
       <form className="commentForm" onSubmit={this.handleCommentSubmit}>
-
-      
-
         <label className="pt-label .modifier">
           Emotion Tagline
           <input className="pt-input" style={this.taglineStyle} type="text" placeholder="Text input" dir="auto" />
@@ -90,8 +98,3 @@ export default class InputBlock extends React.Component {
 //       </div>
 //     )
 // }
-// const mapStateToProps = function (store) {
-//   return {sData: store.headerState.sData}
-// }
-
-// export default connect(mapStateToProps)(MySlider)
