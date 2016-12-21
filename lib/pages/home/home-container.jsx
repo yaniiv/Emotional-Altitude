@@ -41,11 +41,11 @@ class HomeContainer extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="row1-content">
         <button onClick={this.browserPush}>toast</button>
-        <Victory className="chart" emotionData={this.props.data}/>
-        <InputBlock className="commentBox" />
-        </div>
+        <Victory emotionData={this.props.data}/>
+        <InputBlock  />
+      </div>
     )
   }
 }

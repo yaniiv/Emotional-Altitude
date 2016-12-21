@@ -8,12 +8,6 @@ body {
     padding-top: $pt-navbar-height;
 }
 
-#row-content{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
 .emotion-input {
     min-width: 400px;
     min-height: 40px;
@@ -44,13 +38,19 @@ input[type=submit] {
 //     width:1200px;
 //     text-align: center;
 // }
+#row1-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
-.commentForm {
+
+#inputBlock {
     flex-grow: 1;
 }
 
 #eChart {
-    flex-grow:1;
+    flex-grow: 1;
 }
 
 

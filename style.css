@@ -4,11 +4,6 @@ body {
 #content {
   padding-top: 50px; }
 
-#row-content {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap; }
-
 .emotion-input {
   min-width: 400px;
   min-height: 40px;
@@ -30,7 +25,12 @@ input[type=submit] {
   border: 0 none;
   cursor: pointer; }
 
-.commentForm {
+#row1-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+
+#inputBlock {
   flex-grow: 1; }
 
 #eChart {

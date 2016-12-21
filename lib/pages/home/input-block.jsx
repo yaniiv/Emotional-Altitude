@@ -40,7 +40,7 @@ export default class InputBlock extends React.Component {
 
   render () {
     return (
-      <div>
+      <div id="inputBlock">
         <label className="pt-label .modifier">
           What Is Your Emotional Altitude?  
          <Slider
@@ -66,8 +66,8 @@ export default class InputBlock extends React.Component {
         </label>
 
         <input type="submit" value="Submit State" />
-        </form>
-      </div> 
+      </form>
+    </div> 
     );
   }
 };
