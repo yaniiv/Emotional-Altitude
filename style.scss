@@ -8,49 +8,61 @@ body {
     padding-top: $pt-navbar-height;
 }
 
-.emotion-input {
-    min-width: 400px;
-    min-height: 40px;
-    font-size: 20px;
-}
+// .emotion-input {
+//     min-width: 400px;
+//     min-height: 40px;
+//     font-size: 20px;
+// }
 
-input[type=date] {
-    min-width: 300px;
-    min-height: 40px;
-     font-size: 20px;
-}
+// input[type=date] {
+//     min-width: 300px;
+//     min-height: 40px;
+//      font-size: 20px;
+// }
 
-.text-input {
-    min-width: 300px;
-    min-height: 40px;
-    font-size: 20px;
-}
+// .text-input {
+//     min-width: 300px;
+//     min-height: 40px;
+//     font-size: 20px;
+// }
 
-input[type=submit] {
-    height: 40px;
-    background:#ccc; 
-    border:0 none;
-    cursor:pointer;
-}
+// input[type=submit] {
+//     height: 40px;
+//     background:#ccc; 
+//     border:0 none;
+//     cursor:pointer;
+// }
 
 // #commentBox { 
 //     margin: 0 auto; 
 //     width:1200px;
 //     text-align: center;
 // }
+
 #row1-content{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
 
-
-#inputBlock {
-    flex-grow: 1;
-}
-
 #eChart {
     flex-grow: 1;
 }
+
+#inputBlock {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#input-slider {
+    flex-grow: 1;
+}
+
+#input-form {
+    flex-grow: 1;
+}
+
+
 
 

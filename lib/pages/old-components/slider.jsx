@@ -1,8 +1,8 @@
-import React from "react";
-import {connect} from 'react-redux';
-import { Slider } from "@blueprintjs/core";
-import store from '../../store.js';
-import * as types from '../../actions/action-types.js';
+// import React from "react";
+// import {connect} from 'react-redux';
+// import { Slider } from "@blueprintjs/core";
+// import store from '../../store.js';
+// import * as types from '../../actions/action-types.js';
 
 
 // const MySlider = (props) => {

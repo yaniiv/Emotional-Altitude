@@ -5,6 +5,7 @@ import * as types from '../../actions/action-types.js';
 
 import {connect} from 'react-redux';
 import { Slider } from "@blueprintjs/core";
+import { DatePicker } from "@blueprintjs/dateTime";
 
 export default class InputBlock extends React.Component {
   constructor() {
@@ -41,10 +42,10 @@ export default class InputBlock extends React.Component {
   render () {
     return (
       <div id="inputBlock">
+        <div id="input-slider"> 
         <label className="pt-label .modifier">
           What Is Your Emotional Altitude?  
          <Slider
-          id="Slider"
           min={0}
           max={100}
           stepSize={1}
@@ -52,21 +53,26 @@ export default class InputBlock extends React.Component {
           value={this.state.sliderValue}
           onChange={(value)=>{this.handleSliderChange(value)}}
           />          
-        </label>
+          </label>
+        </div>  
 
-      <form className="commentForm" onSubmit={this.handleCommentSubmit}>
+      <DatePicker/>  
+
+      <form id="input-form" onSubmit={this.handleCommentSubmit}>
         <label className="pt-label .modifier">
           Emotion Tagline
-          <input className="pt-input" style={this.taglineStyle} type="text" placeholder="Text input" dir="auto" />
+          <input className="pt-input" type="text" placeholder="Text input" dir="auto" />
         </label>
 
         <label className="pt-label .modifier">
           Description
-          <input className="pt-input" style={this.descriptionStyle} type="text" placeholder="Input group" dir="auto" />
+          <input className="pt-input" type="text" placeholder="Input group" dir="auto" />
         </label>
 
         <input type="submit" value="Submit State" />
-      </form>
+        </form>
+
+
     </div> 
     );
   }

@@ -25,7 +25,7 @@ import {
   RangeSlider
 } from "@blueprintjs/core";
 import { OurToaster } from "./toaster.jsx";
-import MySlider  from "./slider.jsx";
+// import MySlider  from "./slider.jsx";
 
 class HomeContainer extends React.Component {
 
