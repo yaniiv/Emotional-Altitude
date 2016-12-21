@@ -7,16 +7,15 @@ import {connect} from 'react-redux';
 import { Slider } from "@blueprintjs/core";
 import { DatePicker } from "@blueprintjs/dateTime";
 
+
 export default class InputBlock extends React.Component {
   constructor() {
     super()
-    this.taglineStyle = { width: '400px' };
-    this.descriptionStyle = { width: '400px', height:'150px' };
+    // this.taglineStyle = { width: '400px' };
+    // this.descriptionStyle = { width: '400px', height:'150px' };
     
     this.handleCommentSubmit = this.handleCommentSubmit.bind(this)
-    // this.handleSliderChange = this.handleSliderChange.bind(this)
     this.state = {
-      sliderValue: 0,
       selectedDate: new Date()
     } 
   }
@@ -25,27 +24,17 @@ export default class InputBlock extends React.Component {
         e.preventDefault();
 
        let slider = parseInt(document.getElementById('input-slider').childNodes[0].childNodes[3].innerText)
-       let dater = 
 
-    // console.log(e.target.childNodes[0].elements)
-        // console.log("hi")
-        // console.log("sliderValue:", this.state.sliderValue)
-        // console.log("dateValue:", this.state.selectedDate)
-
-    // store.dispatch({
-    //   type: types.ADD_DATA,
-    //   feelsObj: {
-    //     feelingNum: this.state.sliderValue,
-    //     feelingTagline: e.target.elements[0].value,
-    //     feelingDescriptiom: e.target.elements[0].value,
-    //     feelingDate: this.state.selectedDate
-    //   }
-    // })
+    store.dispatch({
+      type: types.ADD_DATA,
+      feelsObj: {
+        feelingNum: slider,
+        feelingTagline: e.target.elements[0].value,
+        feelingDescriptiom: e.target.elements[0].value,
+        feelingDate: this.state.selectedDate
+      }
+    })
   }
-
-  // handleSliderChange(nextVal){
-  //   this.setState({sliderValue: nextVal})
-  // }
 
   handleDateChange(newDate) {
     this.setState({selectedDate: newDate})
@@ -56,18 +45,17 @@ export default class InputBlock extends React.Component {
       <div id="inputBlock">
         
         <MySlider />
-        <MyForm  handleCommentSubmit={this.handleCommentSubmit}/>
         
-        <div id ="input-bottom-section">
+        <div id="input-bottom-section">
+          
+        <MyForm  handleCommentSubmit={this.handleCommentSubmit}/>
 
-         
-        <DatePicker
-          id ="input-date"
-          value={this.state.selectedDate}
-          onChange={(newDate) => {this.handleDateChange(newDate)}}
-        />    
-
-          </div>
+        <div id ="input-date" />
+          <DatePicker
+            value={this.state.selectedDate}
+            onChange={(newDate) => {this.handleDateChange(newDate)}}
+          />    
+        </div>
 
     </div> 
     );
