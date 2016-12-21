@@ -1,4 +1,5 @@
 $pt-navbar-height: 50px;
+$test-border: 1px black solid;
 
 body {
     background-color: #eeeeff;
@@ -43,24 +44,46 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+        border: $test-border;
+
 }
 
 #eChart {
     flex-grow: 1;
+        border: $test-border;
+
 }
 
 #inputBlock {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+        border: $test-border;
+
+}
+
+#input-bottom-section {
+    display: flex;
+    flex-direction: row;
+        border: $test-border;
+
 }
 
 #input-slider {
     flex-grow: 1;
+    border: $test-border;
+
 }
 
 #input-form {
     flex-grow: 1;
+    border: $test-border;
+}
+
+
+#input-date {
+    flex-grow: 1;
+    border: $test-border;
 }
 
 

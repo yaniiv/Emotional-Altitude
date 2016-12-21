@@ -7,20 +7,34 @@ body {
 #row1-content {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  border: 1px black solid; }
 
 #eChart {
-  flex-grow: 1; }
+  flex-grow: 1;
+  border: 1px black solid; }
 
 #inputBlock {
   flex-grow: 1;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  border: 1px black solid; }
+
+#input-bottom-section {
+  display: flex;
+  flex-direction: row;
+  border: 1px black solid; }
 
 #input-slider {
-  flex-grow: 1; }
+  flex-grow: 1;
+  border: 1px black solid; }
 
 #input-form {
-  flex-grow: 1; }
+  flex-grow: 1;
+  border: 1px black solid; }
+
+#input-date {
+  flex-grow: 1;
+  border: 1px black solid; }
 
 /*# sourceMappingURL=style.css.map */
