@@ -2,7 +2,7 @@ import React from 'react';
 import MySlider  from "./slider.jsx";
 import store from '../../store.js';
 import * as types from '../../actions/action-types.js';
-
+import MyForm from "./form-text.jsx"
 import {connect} from 'react-redux';
 import { Slider } from "@blueprintjs/core";
 import { DatePicker } from "@blueprintjs/dateTime";
@@ -23,12 +23,12 @@ export default class InputBlock extends React.Component {
   
   handleCommentSubmit(e) {
         e.preventDefault();
-        console.log(e.target.childNodes)
 
-        console.log(parseInt(e.target.childNodes[0].childNodes[0].childNodes[3].innerText))
+       let slider = parseInt(document.getElementById('input-slider').childNodes[0].childNodes[3].innerText)
+       let dater = 
 
     // console.log(e.target.childNodes[0].elements)
-        console.log("hi")
+        // console.log("hi")
         // console.log("sliderValue:", this.state.sliderValue)
         // console.log("dateValue:", this.state.selectedDate)
 
@@ -55,30 +55,13 @@ export default class InputBlock extends React.Component {
     return (
       <div id="inputBlock">
         
-
+        <MySlider />
+        <MyForm  handleCommentSubmit={this.handleCommentSubmit}/>
+        
         <div id ="input-bottom-section">
 
-   
-
-          <form id="input-form" onSubmit={this.handleCommentSubmit}>
-          
-                  <MySlider />
-
-
-        <label className="pt-label .modifier">
-          Emotion Tagline
-          <input className="pt-input" type="text" placeholder="Text input" dir="auto" />
-        </label>
-
-        <label className="pt-label .modifier">
-          Description
-          <input className="pt-input" type="text" placeholder="Input group" dir="auto" />
-        </label>
-
-        <input type="submit" value="Submit State" />
-          </form>
-
-             <DatePicker
+         
+        <DatePicker
           id ="input-date"
           value={this.state.selectedDate}
           onChange={(newDate) => {this.handleDateChange(newDate)}}
@@ -91,7 +74,7 @@ export default class InputBlock extends React.Component {
   }
 };
 
-        // <div id="input-slider"> 
+        // <div  
         //   <label className="pt-label .modifier">
         //     What Is Your Emotional Altitude?    
         //   <Slider
