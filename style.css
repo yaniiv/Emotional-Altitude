@@ -30,7 +30,7 @@ body {
   border: 1px black solid; }
 
 #input-form {
-  flex-grow: 1;
+  flex-grow: 4;
   border: 1px black solid; }
 
 #input-date {

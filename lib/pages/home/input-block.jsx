@@ -13,7 +13,6 @@ export default class InputBlock extends React.Component {
     super()
     // this.taglineStyle = { width: '400px' };
     // this.descriptionStyle = { width: '400px', height:'150px' };
-    
     this.handleCommentSubmit = this.handleCommentSubmit.bind(this)
     this.state = {
       selectedDate: new Date()
@@ -21,10 +20,9 @@ export default class InputBlock extends React.Component {
   }
   
   handleCommentSubmit(e) {
-        e.preventDefault();
-
-       let slider = parseInt(document.getElementById('input-slider').childNodes[0].childNodes[3].innerText)
-
+    e.preventDefault();
+    let slider = parseInt(document.getElementById('input-slider').childNodes[0].childNodes[3].innerText)
+    
     store.dispatch({
       type: types.ADD_DATA,
       feelsObj: {
@@ -50,12 +48,13 @@ export default class InputBlock extends React.Component {
           
         <MyForm  handleCommentSubmit={this.handleCommentSubmit}/>
 
-        <div id ="input-date" />
+        <div id ="input-date">
           <DatePicker
             value={this.state.selectedDate}
             onChange={(newDate) => {this.handleDateChange(newDate)}}
           />    
-        </div>
+          </div>
+        </div>  
 
     </div> 
     );
