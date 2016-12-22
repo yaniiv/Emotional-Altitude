@@ -27,31 +27,32 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-        border: $test-border;
+    border: $test-border;
 
 }
 
 #input-bottom-section {
+    flex-grow: 4;
     display: flex;
     flex-direction: row;
     border: $test-border;
 }
 
 #input-slider {
-    flex-grow: 1;
     border: $test-border;
-
+    flex-grow: 1;
 }
 
 #input-form {
-    flex-grow: 4;
+    flex-grow: 5;
     border: $test-border;
 }
 
 
 #input-date {
-    flex-grow: 1;
+    flex: 1 1 fit-content;
     border: $test-border;
+    align-self: right;
 }
 
 
